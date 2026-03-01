@@ -8,6 +8,7 @@ import { HowItWorks } from '../components/HowItWorks'
 import { Stats } from '../components/Stats'
 import { Objections } from '../components/Objections'
 import { Testimonials } from '../components/Testimonials'
+import { FAQ } from '../components/FAQ'
 
 export function Home() {
   return (
@@ -39,6 +40,9 @@ export function Home() {
       </section>
       <section className="bg-white">
         <Testimonials />
+      </section>
+      <section id="faq" className="bg-[#F7F9FC]">
+        <FAQ />
       </section>
     </div>
   )
