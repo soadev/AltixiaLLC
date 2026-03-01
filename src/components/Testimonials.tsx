@@ -97,7 +97,7 @@ export function Testimonials() {
           className="text-center max-w-2xl mx-auto"
         >
           <p className="font-sans text-[#6B7280] text-lg leading-relaxed italic border-t border-[#E8EDF2] pt-12">
-            Ils avaient les mêmes doutes que vous. Aujourd&apos;hui, leur LLC est active.
+            {content.testimonials.closingText}
           </p>
         </motion.div>
       </div>

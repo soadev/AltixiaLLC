@@ -91,6 +91,7 @@ export interface ObjectionsContent {
 export interface TestimonialsContent {
   sectionTitle: string
   items: { quote: string; author: string; role: string; location: string }[]
+  closingText: string
 }
 
 /** FAQ section content */

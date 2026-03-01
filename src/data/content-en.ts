@@ -317,6 +317,7 @@ export const contentEn: Content = {
         location: 'Switzerland',
       },
     ],
+    closingText: 'They had the same doubts as you. Today, their LLC is active.',
   },
 
   faq: {

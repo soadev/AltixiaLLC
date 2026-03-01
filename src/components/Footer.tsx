@@ -87,10 +87,10 @@ export function Footer() {
           </p>
           <div className="flex gap-6">
             <Link to="/mentions-legales" className="text-white/40 hover:text-white/70 text-xs transition-colors">
-              {language === 'fr' ? 'Mentions legales' : 'Legal Notice'}
+              {language === 'fr' ? 'Mentions légales' : 'Legal Notice'}
             </Link>
             <Link to="/confidentialite" className="text-white/40 hover:text-white/70 text-xs transition-colors">
-              {language === 'fr' ? 'Confidentialite' : 'Privacy Policy'}
+              {language === 'fr' ? 'Confidentialité' : 'Privacy Policy'}
             </Link>
           </div>
         </div>
