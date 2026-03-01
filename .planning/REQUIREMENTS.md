@@ -127,12 +127,17 @@
 | FOUND-03 | Phase 1 | Pending |
 | FOUND-04 | Phase 1 | Pending |
 | FOUND-05 | Phase 1 | Pending |
+| TECH-05 | Phase 1 | Pending |
+| TECH-07 | Phase 1 | Pending |
 | NAV-01 | Phase 2 | Pending |
 | NAV-02 | Phase 2 | Pending |
 | NAV-03 | Phase 2 | Pending |
 | HERO-01 | Phase 2 | Pending |
 | HERO-02 | Phase 2 | Pending |
 | TRUST-01 | Phase 2 | Pending |
+| TECH-01 | Phase 2 | Pending |
+| TECH-02 | Phase 2 | Pending |
+| TECH-03 | Phase 2 | Pending |
 | PROB-01 | Phase 3 | Pending |
 | PROB-02 | Phase 3 | Pending |
 | SERV-01 | Phase 3 | Pending |
@@ -145,6 +150,7 @@
 | HOW-02 | Phase 3 | Pending |
 | STAT-01 | Phase 3 | Pending |
 | STAT-02 | Phase 3 | Pending |
+| TECH-06 | Phase 3 | Pending |
 | OBJ-01 | Phase 4 | Pending |
 | TEST-01 | Phase 4 | Pending |
 | FAQ-01 | Phase 4 | Pending |
@@ -154,13 +160,7 @@
 | LLC-01 | Phase 4 | Pending |
 | LLC-02 | Phase 4 | Pending |
 | LLC-03 | Phase 4 | Pending |
-| TECH-01 | Phase 5 | Pending |
-| TECH-02 | Phase 5 | Pending |
-| TECH-03 | Phase 5 | Pending |
-| TECH-04 | Phase 5 | Pending |
-| TECH-05 | Phase 5 | Pending |
-| TECH-06 | Phase 5 | Pending |
-| TECH-07 | Phase 5 | Pending |
+| TECH-04 | Phase 4 | Pending |
 
 **Coverage:**
 - v1 requirements: 39 total
@@ -169,4 +169,4 @@
 
 ---
 *Requirements defined: 2026-03-01*
-*Last updated: 2026-03-01 after initial definition*
+*Last updated: 2026-03-01 — Phase mapping revised to 4 phases (TECH requirements distributed into relevant phases)*
