@@ -280,9 +280,9 @@ export const contentEn: Content = {
           'Creating the LLC itself, yes. But correctly obtaining the EIN, filing the ITIN application, opening a bank account without blocks, choosing the right state, maintaining accounting, filing IRS declarations... That\'s a different profession. And mistakes are costly.',
       },
       {
-        myth: 'It\'s too expensive.',
+        myth: 'I need to meet other people before deciding.',
         reality:
-          'Compare the price of complete support with the cost of a poorly set up LLC: blocked bank account, tax audit, IRS penalties, wasted time. The real "expensive" is doing it wrong.',
+          'Our clients find us through word of mouth and recommendations from friends who\'ve been through the process. Experience and results speak for themselves: 100% success rate, LLC in 48h, lasting support. Everyone who\'s met us has signed.',
       },
       {
         myth: 'I need to leave everything before expatriating.',

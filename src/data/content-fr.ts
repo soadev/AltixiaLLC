@@ -280,9 +280,9 @@ export const contentFr: Content = {
           'Créer la LLC en soi, oui. Mais obtenir l\'EIN correctement, faire la demande d\'ITIN, ouvrir un compte bancaire sans blocage, choisir le bon État, tenir la comptabilité, faire les déclarations IRS... C\'est un autre métier. Et les erreurs coûtent cher.',
       },
       {
-        myth: 'C\'est trop cher.',
+        myth: 'Je dois d\'abord rencontrer d\'autres personnes avant de me décider.',
         reality:
-          'Comparez le prix d\'un accompagnement complet avec le coût d\'une LLC mal montée : compte bancaire bloqué, redressement fiscal, amendes IRS, temps perdu. Le vrai "cher", c\'est de mal faire.',
+          'Nos clients nous trouvent par le bouche-à-oreille et la recommandation d\'amis qui ont déjà fait le parcours. L\'expérience et les résultats parlent d\'eux-mêmes : 100% de taux de réussite, LLC en 48h, accompagnement durable. Tous ceux qui nous ont rencontrés ont signé.',
       },
       {
         myth: 'Je dois d\'abord tout quitter avant de m\'expatrier.',
