@@ -9,6 +9,7 @@ import { Stats } from '../components/Stats'
 import { Objections } from '../components/Objections'
 import { Testimonials } from '../components/Testimonials'
 import { FAQ } from '../components/FAQ'
+import { FinalCTA } from '../components/FinalCTA'
 
 export function Home() {
   return (
@@ -43,6 +44,9 @@ export function Home() {
       </section>
       <section id="faq" className="bg-[#F7F9FC]">
         <FAQ />
+      </section>
+      <section id="contact">
+        <FinalCTA />
       </section>
     </div>
   )

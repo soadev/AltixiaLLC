@@ -1,5 +1,6 @@
 import { Outlet } from 'react-router-dom'
 import { Navbar } from '../components/Navbar'
+import { Footer } from '../components/Footer'
 import { WhatsAppButton } from '../components/WhatsAppButton'
 
 export function RootLayout() {
@@ -9,8 +10,8 @@ export function RootLayout() {
       <main>
         <Outlet />
       </main>
+      <Footer />
       <WhatsAppButton />
-      {/* Footer will be added in Phase 4 */}
     </div>
   )
 }
