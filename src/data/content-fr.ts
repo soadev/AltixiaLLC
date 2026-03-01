@@ -20,7 +20,7 @@ export const contentFr: Content = {
     badge: '🇺🇸 Société basée au Wyoming, USA',
     title: 'Votre LLC américaine clé en main. En français. En 48h.',
     subtitle:
-      'Altixia accompagne les expatriés francophones de France, Belgique et Suisse dans la création de leur société américaine. LLC, EIN, ITIN, compte bancaire, comptabilité — tout est inclus, tout est géré, en français.',
+      'Altixia accompagne les expatriés francophones de France, Belgique et Suisse dans la création de leur société américaine. LLC, EIN, ITIN, compte bancaire, comptabilité : tout est inclus, tout est géré, en français.',
     ctaPrimary: {
       label: 'Créer ma LLC maintenant →',
       href: 'https://wa.me/13073105297',
@@ -95,7 +95,7 @@ export const contentFr: Content = {
   services: {
     sectionTitle: 'Tout ce qu\'il vous faut pour lancer votre business aux USA.',
     subtitle:
-      'De la création de votre LLC à la comptabilité en passant par l\'ITIN et l\'ouverture de compte bancaire — Altixia gère tout, dans votre langue.',
+      'De la création de votre LLC à la comptabilité en passant par l\'ITIN et l\'ouverture de compte bancaire, Altixia gère tout, dans votre langue.',
     cards: [
       {
         icon: 'Building',
@@ -136,7 +136,7 @@ export const contentFr: Content = {
         icon: 'ShieldCheck',
         title: 'Conseil fiscal continu',
         description:
-          'Pas de one-shot. Accompagnement fiscal dans la durée — car une LLC doit vivre, tenir une comptabilité, effectuer des déclarations et éviter les erreurs coûteuses.',
+          'Pas de one-shot. Accompagnement fiscal dans la durée, car une LLC doit vivre, tenir une comptabilité, effectuer des déclarations et éviter les erreurs coûteuses.',
         badge: 'Suivi durable',
       },
       {
@@ -157,7 +157,7 @@ export const contentFr: Content = {
   },
 
   packLLC: {
-    sectionTitle: 'Le Pack LLC Complet — Zéro prise de tête.',
+    sectionTitle: 'Le Pack LLC Complet, zéro prise de tête.',
     subtitle:
       'On ne fait pas de LLC nue. Parce que sans EIN + ITIN + compte bancaire, votre LLC est inutile. C\'est pour ça qu\'on a tout packagé.',
     checklist: [
@@ -219,7 +219,7 @@ export const contentFr: Content = {
         icon: 'Fingerprint',
         title: 'Du sur-mesure, pas de l\'usine',
         description:
-          'Contrairement aux grosses plateformes qui ouvrent des milliers de LLC à la même adresse — ce qui bloque les comptes bancaires — chez Altixia, chaque client est unique.',
+          'Contrairement aux grosses plateformes qui ouvrent des milliers de LLC à la même adresse, ce qui bloque les comptes bancaires, chez Altixia, chaque client est unique.',
       },
     ],
   },
@@ -331,7 +331,7 @@ export const contentFr: Content = {
       {
         question: 'Dans quel État créer ma LLC ?',
         answer:
-          'On recommande principalement le Wyoming, le Delaware et le Nouveau-Mexique. Pourquoi ? L\'anonymat (protection de l\'identité du dirigeant), la protection juridique contre les poursuites, et les coûts de maintenance raisonnables. Le choix dépend de votre situation personnelle — on vous conseille lors du premier échange.',
+          'On recommande principalement le Wyoming, le Delaware et le Nouveau-Mexique. Pourquoi ? L\'anonymat (protection de l\'identité du dirigeant), la protection juridique contre les poursuites, et les coûts de maintenance raisonnables. Le choix dépend de votre situation personnelle, on vous conseille lors du premier échange.',
       },
       {
         question: 'C\'est quoi l\'ITIN et pourquoi c\'est indispensable ?',
@@ -346,7 +346,7 @@ export const contentFr: Content = {
       {
         question: 'Est-ce que je risque d\'être imposé en France / Belgique / Suisse ?',
         answer:
-          'C\'est la question n°1 de nos clients. La réponse dépend de votre situation personnelle, de votre résidence fiscale, et de la convention fiscale entre votre pays et les USA. C\'est exactement pour ça qu\'on propose un accompagnement fiscal personnalisé — pas de réponse générique, mais un conseil adapté à VOTRE cas.',
+          'C\'est la question n°1 de nos clients. La réponse dépend de votre situation personnelle, de votre résidence fiscale, et de la convention fiscale entre votre pays et les USA. C\'est exactement pour ça qu\'on propose un accompagnement fiscal personnalisé : pas de réponse générique, mais un conseil adapté à VOTRE cas.',
       },
       {
         question: 'Pourquoi ne pas faire seul ou avec un service low-cost ?',
@@ -356,7 +356,7 @@ export const contentFr: Content = {
       {
         question: 'Qu\'est-ce qui se passe APRÈS la création de la LLC ?',
         answer:
-          'C\'est la question que personne ne pose — et c\'est le piège. Après la création, votre LLC doit : tenir une comptabilité, effectuer des déclarations annuelles auprès de l\'IRS, renouveler l\'agent enregistré, maintenir la conformité de l\'État, et potentiellement payer des taxes. Beaucoup de prestataires s\'arrêtent à la création. Pas nous.',
+          'C\'est la question que personne ne pose, et c\'est le piège. Après la création, votre LLC doit : tenir une comptabilité, effectuer des déclarations annuelles auprès de l\'IRS, renouveler l\'agent enregistré, maintenir la conformité de l\'État, et potentiellement payer des taxes. Beaucoup de prestataires s\'arrêtent à la création. Pas nous.',
       },
       {
         question: 'Vous gérez la comptabilité et les déclarations ?',
@@ -371,7 +371,7 @@ export const contentFr: Content = {
       {
         question: 'Comment je vous contacte ?',
         answer:
-          'Trois options : 1) WhatsApp au +1 (307) 310-5297 — c\'est le plus rapide. 2) Réservez un appel gratuit. 3) Remplissez le formulaire et payez directement en ligne. On s\'adapte à votre préférence.',
+          'Trois options : 1) WhatsApp au +1 (307) 310-5297. c\'est le plus rapide. 2) Réservez un appel gratuit. 3) Remplissez le formulaire et payez directement en ligne. On s\'adapte à votre préférence.',
       },
     ],
   },
@@ -421,14 +421,14 @@ export const contentFr: Content = {
     contact: {
       phone: '+1 (307) 310-5297',
       email: 'claude@altixia.com',
-      address: 'Altixia LLC — Wyoming, USA',
+      address: 'Altixia LLC, Wyoming, USA',
     },
     copyright: '© 2026 Altixia LLC. Tous droits réservés.',
   },
 
   llcPage: {
     title: 'Création de LLC aux États-Unis',
-    subtitle: 'Wyoming • Delaware • Nouveau-Mexique — Votre société américaine créée en 48h.',
+    subtitle: 'Wyoming • Delaware • Nouveau-Mexique. Votre société américaine créée en 48h.',
     states: [
       {
         name: 'Wyoming',

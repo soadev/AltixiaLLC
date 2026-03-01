@@ -55,14 +55,13 @@ export function Navbar() {
       >
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           {/* LEFT: LOGO */}
-          <div className="flex items-center gap-3 shrink-0">
-            <div className="w-10 h-10 bg-[#3877AF] rounded flex items-center justify-center text-white font-bold text-xl italic shadow-sm">
-              A
-            </div>
-            <span className="text-[#333A49] font-bold text-xl tracking-tight hidden sm:block font-sans">
-              {content.navbar.logo.toUpperCase()}
-            </span>
-          </div>
+          <a href="#accueil" onClick={(e) => { e.preventDefault(); handleNavClick('#accueil') }} className="shrink-0">
+            <img
+              src="/logo/logo-200.png"
+              alt="Altixia LLC"
+              className="h-10 w-auto"
+            />
+          </a>
 
           {/* CENTER: NAV LINKS (Desktop) */}
           <div className="hidden lg:flex gap-6 xl:gap-8 items-center text-[#333A49] font-medium font-sans">
@@ -165,10 +164,11 @@ export function Navbar() {
               {/* Header */}
               <div className="p-6 flex justify-between items-center border-b border-[#E8EDF2]">
                 <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 bg-[#3877AF] rounded flex items-center justify-center text-white font-bold italic">
-                    A
-                  </div>
-                  <span className="font-bold text-[#333A49] font-sans">ALTIXIA</span>
+                  <img
+                    src="/logo/logo-200.png"
+                    alt="Altixia LLC"
+                    className="h-8 w-auto"
+                  />
                 </div>
                 <button
                   onClick={() => setIsMenuOpen(false)}

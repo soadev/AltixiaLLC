@@ -20,7 +20,7 @@ export const contentEn: Content = {
     badge: '🇺🇸 Wyoming-based company, USA',
     title: 'Your US LLC, turnkey. In your language. In 48 hours.',
     subtitle:
-      'Altixia helps French-speaking expats from France, Belgium, and Switzerland set up their American company. LLC, EIN, ITIN, bank account, accounting — everything included, everything managed, in your language.',
+      'Altixia helps French-speaking expats from France, Belgium, and Switzerland set up their American company. LLC, EIN, ITIN, bank account, accounting : everything included, everything managed, in your language.',
     ctaPrimary: {
       label: 'Create my LLC now →',
       href: 'https://wa.me/13073105297',
@@ -95,7 +95,7 @@ export const contentEn: Content = {
   services: {
     sectionTitle: 'Everything you need to launch your US business.',
     subtitle:
-      'From LLC creation to accounting, through ITIN and bank account opening — Altixia handles everything, in your language.',
+      'From LLC creation to accounting, through ITIN and bank account opening, Altixia handles everything, in your language.',
     cards: [
       {
         icon: 'Building',
@@ -115,7 +115,7 @@ export const contentEn: Content = {
         icon: 'CreditCard',
         title: 'ITIN Application',
         description:
-          'Your US Individual Taxpayer Identification Number. Essential for accessing US credit. Delivered in ~7 weeks — with our tips to speed things up.',
+          'Your US Individual Taxpayer Identification Number. Essential for accessing US credit. Delivered in ~7 weeks, with our tips to speed things up.',
         badge: '~7 weeks',
       },
       {
@@ -136,7 +136,7 @@ export const contentEn: Content = {
         icon: 'ShieldCheck',
         title: 'Ongoing Tax Advisory',
         description:
-          'Not a one-shot. Continuous tax guidance — because an LLC needs to live, maintain accounting, and file declarations.',
+          'Not a one-shot. Continuous tax guidance, because an LLC needs to live, maintain accounting, and file declarations.',
         badge: 'Long-term',
       },
       {
@@ -157,7 +157,7 @@ export const contentEn: Content = {
   },
 
   packLLC: {
-    sectionTitle: 'The Complete LLC Pack — Zero headaches.',
+    sectionTitle: 'The Complete LLC Pack, zero headaches.',
     subtitle:
       'We don\'t create bare LLCs. Because without EIN + ITIN + bank account, your LLC is useless. That\'s why we bundled everything.',
     checklist: [
@@ -219,7 +219,7 @@ export const contentEn: Content = {
         icon: 'Fingerprint',
         title: 'Custom work, not factory',
         description:
-          'Unlike large platforms that open thousands of LLCs at the same address — which blocks bank accounts — at Altixia, every client is unique.',
+          'Unlike large platforms that open thousands of LLCs at the same address, which blocks bank accounts, at Altixia, every client is unique.',
       },
     ],
   },
@@ -331,7 +331,7 @@ export const contentEn: Content = {
       {
         question: 'In which state should I create my LLC?',
         answer:
-          'We primarily recommend Wyoming, Delaware, and New Mexico. Why? Anonymity (manager identity protection), legal protection against lawsuits, and reasonable maintenance costs. The choice depends on your personal situation — we advise you during the first call.',
+          'We primarily recommend Wyoming, Delaware, and New Mexico. Why? Anonymity (manager identity protection), legal protection against lawsuits, and reasonable maintenance costs. The choice depends on your personal situation, we advise you during the first call.',
       },
       {
         question: 'What is an ITIN and why is it essential?',
@@ -346,7 +346,7 @@ export const contentEn: Content = {
       {
         question: 'Will I be taxed in France / Belgium / Switzerland?',
         answer:
-          'This is our clients\' #1 question. The answer depends on your personal situation, tax residency, and the tax treaty between your country and the US. That\'s exactly why we offer personalized tax guidance — no generic answer, but advice tailored to YOUR case.',
+          'This is our clients\' #1 question. The answer depends on your personal situation, tax residency, and the tax treaty between your country and the US. That\'s exactly why we offer personalized tax guidance : no generic answer, but advice tailored to YOUR case.',
       },
       {
         question: 'Why not do it alone or with a low-cost service?',
@@ -356,7 +356,7 @@ export const contentEn: Content = {
       {
         question: 'What happens AFTER the LLC is created?',
         answer:
-          'This is the question nobody asks — and it\'s the trap. After creation, your LLC must: maintain accounting, file annual IRS declarations, renew the registered agent, maintain state compliance, and potentially pay taxes. Many providers stop at creation. We don\'t.',
+          'This is the question nobody asks, and it\'s the trap. After creation, your LLC must: maintain accounting, file annual IRS declarations, renew the registered agent, maintain state compliance, and potentially pay taxes. Many providers stop at creation. We don\'t.',
       },
       {
         question: 'Do you handle accounting and tax filings?',
@@ -371,7 +371,7 @@ export const contentEn: Content = {
       {
         question: 'How do I contact you?',
         answer:
-          'Three options: 1) WhatsApp at +1 (307) 310-5297 — it\'s the fastest. 2) Book a free call. 3) Fill out the form and pay directly online. We adapt to your preference.',
+          'Three options: 1) WhatsApp at +1 (307) 310-5297. it\'s the fastest. 2) Book a free call. 3) Fill out the form and pay directly online. We adapt to your preference.',
       },
     ],
   },
@@ -421,14 +421,14 @@ export const contentEn: Content = {
     contact: {
       phone: '+1 (307) 310-5297',
       email: 'claude@altixia.com',
-      address: 'Altixia LLC — Wyoming, USA',
+      address: 'Altixia LLC, Wyoming, USA',
     },
     copyright: '© 2026 Altixia LLC. All rights reserved.',
   },
 
   llcPage: {
     title: 'US LLC Formation',
-    subtitle: 'Wyoming • Delaware • New Mexico — Your American company created in 48h.',
+    subtitle: 'Wyoming • Delaware • New Mexico. Your American company created in 48h.',
     states: [
       {
         name: 'Wyoming',

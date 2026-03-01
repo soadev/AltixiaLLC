@@ -12,9 +12,11 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
           {/* Column 1: Brand */}
           <div className="space-y-6">
-            <h2 className="text-2xl font-bold tracking-tight font-serif">
-              {logo}
-            </h2>
+            <img
+              src="/logo/logo-200.png"
+              alt={logo}
+              className="h-10 w-auto brightness-0 invert"
+            />
             <p className="text-white/60 text-sm leading-relaxed max-w-xs">
               {description}
             </p>
