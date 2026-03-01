@@ -6,6 +6,8 @@ import { PackLLC } from '../components/PackLLC'
 import { WhyAltixia } from '../components/WhyAltixia'
 import { HowItWorks } from '../components/HowItWorks'
 import { Stats } from '../components/Stats'
+import { Objections } from '../components/Objections'
+import { Testimonials } from '../components/Testimonials'
 
 export function Home() {
   return (
@@ -32,7 +34,12 @@ export function Home() {
       <section className="bg-[#333A49]">
         <Stats />
       </section>
-      {/* More sections added in Phase 4 */}
+      <section id="objections" className="bg-white">
+        <Objections />
+      </section>
+      <section className="bg-white">
+        <Testimonials />
+      </section>
     </div>
   )
 }
