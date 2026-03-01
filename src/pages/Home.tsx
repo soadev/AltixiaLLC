@@ -10,10 +10,18 @@ import { Objections } from '../components/Objections'
 import { Testimonials } from '../components/Testimonials'
 import { FAQ } from '../components/FAQ'
 import { FinalCTA } from '../components/FinalCTA'
+import { SEOHead } from '../components/SEOHead'
 
 export function Home() {
   return (
     <div>
+      <SEOHead
+        titleFr="Altixia LLC — Votre LLC américaine clé en main"
+        titleEn="Altixia LLC — Your US LLC, turnkey"
+        descriptionFr="Altixia accompagne les expatriés francophones dans la création de leur LLC américaine. LLC, EIN, ITIN, compte bancaire, comptabilité — tout est géré, en français."
+        descriptionEn="Altixia helps French-speaking expats set up their US LLC. LLC, EIN, ITIN, bank account, accounting — everything managed, in your language."
+        path="/"
+      />
       <section id="accueil">
         <Hero />
       </section>

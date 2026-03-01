@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { Check, MessageCircle } from 'lucide-react'
 import { useContent } from '../hooks/useContent'
+import { SEOHead } from '../components/SEOHead'
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -27,6 +28,13 @@ export function LLCPage() {
 
   return (
     <div>
+      <SEOHead
+        titleFr="Création de LLC aux États-Unis — Wyoming, Delaware, Nouveau-Mexique | Altixia"
+        titleEn="US LLC Formation — Wyoming, Delaware, New Mexico | Altixia"
+        descriptionFr="Créez votre LLC américaine au Wyoming, Delaware ou Nouveau-Mexique. Pack complet : LLC + EIN + ITIN + compte bancaire. En français, en 48h."
+        descriptionEn="Create your US LLC in Wyoming, Delaware, or New Mexico. Complete pack: LLC + EIN + ITIN + bank account. In your language, in 48h."
+        path="/llc"
+      />
       {/* 1. LLC Hero Section */}
       <section className="bg-[#D5E8F8] py-20 px-5 md:px-8 text-center">
         <motion.div
