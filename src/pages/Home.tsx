@@ -1,4 +1,5 @@
 import { Hero } from '../components/Hero'
+import { TrustBar } from '../components/TrustBar'
 
 export function Home() {
   return (
@@ -6,8 +7,8 @@ export function Home() {
       <section id="accueil">
         <Hero />
       </section>
-      {/* TrustBar added in Plan 02-03 */}
-      {/* More sections in Phase 3+ */}
+      <TrustBar />
+      {/* More sections added in Phase 3+ */}
     </div>
   )
 }
