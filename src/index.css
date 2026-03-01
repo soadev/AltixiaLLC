@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+@theme {
+  --font-serif: "DM Serif Display", serif;
+  --font-sans: "DM Sans", sans-serif;
+  --color-primary: #3877AF;
+  --color-primary-light: #D5E8F8;
+  --color-dark: #333A49;
+  --color-medium-blue: #9BCAEF;
+  --color-off-white: #F7F9FC;
+  --color-light-gray: #E8EDF2;
+  --color-text-secondary: #6B7280;
+  --color-hover-blue: #2D6193;
+  --color-success: #10B981;
+}
