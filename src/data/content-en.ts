@@ -4,7 +4,6 @@ export const contentEn: Content = {
   navbar: {
     logo: 'Altixia LLC',
     links: [
-      { label: 'Home', href: '#accueil' },
       { label: 'Services', href: '#services' },
       { label: 'Why Us', href: '#pourquoi' },
       { label: 'How It Works', href: '#comment' },
@@ -398,12 +397,12 @@ export const contentEn: Content = {
       {
         title: 'Navigation',
         links: [
-          { label: 'Home', href: '#accueil' },
           { label: 'Services', href: '#services' },
           { label: 'Why Us', href: '#pourquoi' },
           { label: 'How It Works', href: '#comment' },
           { label: 'FAQ', href: '#faq' },
           { label: 'Contact', href: '#contact' },
+          { label: 'LLC Formation', href: '/llc' },
         ],
       },
       {

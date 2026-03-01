@@ -1,5 +1,19 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: #3877AF;
+  color: white;
+}
+
+::-moz-selection {
+  background-color: #3877AF;
+  color: white;
+}
+
 @theme {
   --font-serif: "Bricolage Grotesque", sans-serif;
   --font-sans: "Bricolage Grotesque", sans-serif;

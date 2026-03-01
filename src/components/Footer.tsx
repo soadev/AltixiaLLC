@@ -1,8 +1,11 @@
 import { Phone, Mail, MapPin } from 'lucide-react'
+import { Link } from 'react-router-dom'
 import { useContent } from '../hooks/useContent'
+import { useLanguage } from '../contexts/LanguageContext'
 
 export function Footer() {
   const content = useContent()
+  const { language } = useLanguage()
   const { logo, description, columns, contact, copyright } = content.footer
 
   return (
@@ -78,10 +81,18 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-white/10 flex justify-center items-center">
+        <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-white/40 text-xs tracking-wide">
             {copyright}
           </p>
+          <div className="flex gap-6">
+            <Link to="/mentions-legales" className="text-white/40 hover:text-white/70 text-xs transition-colors">
+              {language === 'fr' ? 'Mentions legales' : 'Legal Notice'}
+            </Link>
+            <Link to="/confidentialite" className="text-white/40 hover:text-white/70 text-xs transition-colors">
+              {language === 'fr' ? 'Confidentialite' : 'Privacy Policy'}
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
