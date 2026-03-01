@@ -26,13 +26,13 @@ export function WhatsAppButton() {
           delay: 1.5,
           duration: 3,
           repeat: Infinity,
-          ease: 'easeInOut',
+          ease: 'easeInOut' as const,
         },
         boxShadow: {
           delay: 1.5,
           duration: 3,
           repeat: Infinity,
-          ease: 'easeInOut',
+          ease: 'easeInOut' as const,
         },
         default: {
           delay: 1,
@@ -44,7 +44,7 @@ export function WhatsAppButton() {
       }}
       whileHover={{
         scale: 1.1,
-        transition: { duration: 0.2, ease: 'easeOut' },
+        transition: { duration: 0.2, ease: 'easeOut' as const },
       }}
       whileTap={{ scale: 0.95 }}
     >

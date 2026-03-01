@@ -31,7 +31,7 @@ export function Hero() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.5, ease: 'easeOut' },
+      transition: { duration: 0.5, ease: 'easeOut' as const },
     },
   }
 
@@ -189,7 +189,7 @@ export function Hero() {
             transition={{
               duration: 4,
               repeat: Infinity,
-              ease: 'easeInOut',
+              ease: 'easeInOut' as const,
             }}
             className="absolute -bottom-6 -right-6 w-24 h-24 bg-[#3877AF]/5 rounded-full blur-2xl z-0"
           />
