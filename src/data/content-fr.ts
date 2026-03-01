@@ -304,14 +304,14 @@ export const contentFr: Content = {
       },
       {
         quote:
-          'Pourquoi te faire confiance ? L\'IA me dit que ça sert à rien.',
+          'Pourquoi te faire confiance ? Ouais, mais l\'IA me dit que ça sert à rien.',
         author: 'Freelance développeur',
         role: 'Développeur',
         location: 'Belgique',
       },
       {
         quote:
-          'Est-ce que ça va être long ? J\'ai déjà perdu 3 mois avec un autre prestataire.',
+          'Est-ce que ça va être long ?',
         author: 'Closer',
         role: 'Closer',
         location: 'Suisse',

@@ -304,14 +304,14 @@ export const contentEn: Content = {
       },
       {
         quote:
-          'Why should I trust you? AI tells me it\'s useless.',
+          'Why should I trust you? Yeah, but AI tells me it\'s useless.',
         author: 'Freelance developer',
         role: 'Developer',
         location: 'Belgium',
       },
       {
         quote:
-          'Will it take long? I already lost 3 months with another provider.',
+          'Will it take long?',
         author: 'Closer',
         role: 'Closer',
         location: 'Switzerland',
