@@ -15,18 +15,18 @@
 
 ### Navbar
 
-- [ ] **NAV-01**: Sticky navbar with logo, navigation links (Accueil, Services, Pourquoi nous, Comment ça marche, FAQ, Contact), WhatsApp number (+1 307-310-5297), CTA button, and FR/EN toggle
-- [ ] **NAV-02**: Navbar backdrop-blur and border-bottom on scroll
-- [ ] **NAV-03**: Mobile hamburger menu with slide-in panel
+- [x] **NAV-01**: Sticky navbar with logo, navigation links (Accueil, Services, Pourquoi nous, Comment ça marche, FAQ, Contact), WhatsApp number (+1 307-310-5297), CTA button, and FR/EN toggle
+- [x] **NAV-02**: Navbar backdrop-blur and border-bottom on scroll
+- [x] **NAV-03**: Mobile hamburger menu with slide-in panel
 
 ### Hero
 
-- [ ] **HERO-01**: Hero section with badge, H1 title, subtitle, 2 CTAs (primary + WhatsApp), and 3 trust badges
-- [ ] **HERO-02**: Desktop layout with text left / visual right, mobile stacked
+- [x] **HERO-01**: Hero section with badge, H1 title, subtitle, 2 CTAs (primary + WhatsApp), and 3 trust badges
+- [x] **HERO-02**: Desktop layout with text left / visual right, mobile stacked
 
 ### Trust Bar
 
-- [ ] **TRUST-01**: Horizontal trust bar with 5 reassurance elements (48h, 100%, French, Wyoming, WhatsApp 7/7)
+- [x] **TRUST-01**: Horizontal trust bar with 5 reassurance elements (48h, 100%, French, Wyoming, WhatsApp 7/7)
 
 ### Problem Section
 
@@ -87,9 +87,9 @@
 
 ### Technical
 
-- [ ] **TECH-01**: Smooth scroll navigation from navbar to page sections via anchors
-- [ ] **TECH-02**: Floating WhatsApp button fixed bottom-right, always visible, linking to wa.me/13073105297
-- [ ] **TECH-03**: Mobile-first responsive design (mobile padding 20px, tablet 40px, desktop max-width 1280px with 80px padding)
+- [x] **TECH-01**: Smooth scroll navigation from navbar to page sections via anchors
+- [x] **TECH-02**: Floating WhatsApp button fixed bottom-right, always visible, linking to wa.me/13073105297
+- [x] **TECH-03**: Mobile-first responsive design (mobile padding 20px, tablet 40px, desktop max-width 1280px with 80px padding)
 - [ ] **TECH-04**: SEO meta tags, Open Graph tags, and dynamic page title based on language
 - [ ] **TECH-05**: Custom Google Fonts loaded (serif for titles, sans-serif for body — never Inter/Roboto/Arial)
 - [ ] **TECH-06**: Framer Motion fade-in + slide-up scroll animations on all sections with staggered delays
@@ -129,15 +129,15 @@
 | FOUND-05 | Phase 1 | Pending |
 | TECH-05 | Phase 1 | Pending |
 | TECH-07 | Phase 1 | Pending |
-| NAV-01 | Phase 2 | Pending |
-| NAV-02 | Phase 2 | Pending |
-| NAV-03 | Phase 2 | Pending |
-| HERO-01 | Phase 2 | Pending |
-| HERO-02 | Phase 2 | Pending |
-| TRUST-01 | Phase 2 | Pending |
-| TECH-01 | Phase 2 | Pending |
-| TECH-02 | Phase 2 | Pending |
-| TECH-03 | Phase 2 | Pending |
+| NAV-01 | Phase 2 | Complete |
+| NAV-02 | Phase 2 | Complete |
+| NAV-03 | Phase 2 | Complete |
+| HERO-01 | Phase 2 | Complete |
+| HERO-02 | Phase 2 | Complete |
+| TRUST-01 | Phase 2 | Complete |
+| TECH-01 | Phase 2 | Complete |
+| TECH-02 | Phase 2 | Complete |
+| TECH-03 | Phase 2 | Complete |
 | PROB-01 | Phase 3 | Pending |
 | PROB-02 | Phase 3 | Pending |
 | SERV-01 | Phase 3 | Pending |
