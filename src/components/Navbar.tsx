@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, MessageCircle, ArrowRight, Globe } from 'lucide-react'
+import { useNavigate, useLocation } from 'react-router-dom'
 import { useContent } from '../hooks/useContent'
 import { useLanguage } from '../contexts/LanguageContext'
 import { useScrollPosition } from '../hooks/useScrollPosition'
@@ -22,6 +23,8 @@ export function Navbar() {
   const { language, setLanguage } = useLanguage()
   const isScrolled = useScrollPosition(50)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const navigate = useNavigate()
+  const location = useLocation()
 
   // Prevent body scroll when mobile menu is open
   useEffect(() => {
@@ -36,7 +39,20 @@ export function Navbar() {
   }, [isMenuOpen])
 
   const handleNavClick = (href: string) => {
-    scrollToSection(href)
+    if (location.pathname !== '/') {
+      navigate('/' + href)
+    } else {
+      scrollToSection(href)
+    }
+    setIsMenuOpen(false)
+  }
+
+  const handleLogoClick = () => {
+    if (location.pathname !== '/') {
+      navigate('/')
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
     setIsMenuOpen(false)
   }
 
@@ -55,13 +71,13 @@ export function Navbar() {
       >
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           {/* LEFT: LOGO */}
-          <a href="#accueil" onClick={(e) => { e.preventDefault(); handleNavClick('#accueil') }} className="shrink-0">
+          <button onClick={handleLogoClick} className="shrink-0 bg-transparent border-none cursor-pointer p-0">
             <img
               src="/logo/logo-200.png"
               alt="Altixia LLC"
               className="h-10 w-auto"
             />
-          </a>
+          </button>
 
           {/* CENTER: NAV LINKS (Desktop) */}
           <div className="hidden lg:flex gap-6 xl:gap-8 items-center text-[#333A49] font-medium font-sans">
@@ -74,6 +90,12 @@ export function Navbar() {
                 {link.label}
               </button>
             ))}
+            <button
+              onClick={() => navigate('/llc')}
+              className="hover:text-[#3877AF] transition-colors text-[15px] whitespace-nowrap bg-transparent border-none cursor-pointer font-bold text-[#3877AF]"
+            >
+              {language === 'fr' ? 'Création LLC' : 'LLC Formation'}
+            </button>
           </div>
 
           {/* RIGHT: ACTIONS (Desktop) */}
@@ -189,6 +211,12 @@ export function Navbar() {
                     {link.label}
                   </button>
                 ))}
+                <button
+                  onClick={() => { navigate('/llc'); setIsMenuOpen(false) }}
+                  className="block w-full text-left py-4 text-[#3877AF] font-bold hover:text-[#2D6193] transition-colors text-lg font-sans bg-transparent border-none cursor-pointer"
+                >
+                  {language === 'fr' ? 'Création LLC' : 'LLC Formation'}
+                </button>
               </div>
 
               {/* Footer Actions */}
