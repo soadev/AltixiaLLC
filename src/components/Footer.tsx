@@ -94,6 +94,18 @@ export function Footer() {
             </Link>
           </div>
         </div>
+
+        {/* Agency Credit */}
+        <div className="mt-8 flex justify-center">
+          <a
+            href="https://mailenz.ch"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-white/25 hover:text-white/50 text-[11px] tracking-wider transition-colors duration-300"
+          >
+            made with <span className="text-red-400/60 text-sm">&#10084;</span> by <span className="font-semibold">mailenz agency</span>
+          </a>
+        </div>
       </div>
     </footer>
   )
