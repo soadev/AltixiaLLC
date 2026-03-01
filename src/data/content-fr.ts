@@ -368,6 +368,11 @@ export const contentFr: Content = {
           'Absolument. Beaucoup de nos clients créent leur LLC US tout en résidant encore en France, Belgique ou Suisse. La LLC américaine ne nécessite pas de présence physique aux USA. On structure le setup pour que votre transition soit progressive.',
       },
       {
+        question: 'Quelle garantie j\'ai que ça va fonctionner ?',
+        answer:
+          '100% des LLC que nous avons créées l\'ont été en moins de 48 heures ouvrées. On ne fait pas de promesses en l\'air : chaque prestation donne lieu à un document officiel attestant sa réalisation (actes de constitution, attestation ITIN, etc.). Et surtout, on ne vous lâche pas après la création : accompagnement comptable, déclarations, conseil fiscal dans la durée. Notre meilleure garantie, c\'est que tous les clients qui nous ont rencontrés nous ont fait confiance.',
+      },
+      {
         question: 'Comment je vous contacte ?',
         answer:
           'Trois options : 1) WhatsApp au +1 (307) 310-5297. c\'est le plus rapide. 2) Réservez un appel gratuit. 3) Remplissez le formulaire et payez directement en ligne. On s\'adapte à votre préférence.',

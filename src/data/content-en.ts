@@ -368,6 +368,11 @@ export const contentEn: Content = {
           'Absolutely. Many of our clients create their US LLC while still residing in France, Belgium, or Switzerland. A US LLC doesn\'t require physical presence in the USA. We structure the setup so your transition is gradual.',
       },
       {
+        question: 'What guarantee do I have that it will work?',
+        answer:
+          '100% of the LLCs we\'ve created were done in under 48 business hours. We don\'t make empty promises: every service comes with an official document proving completion (articles of organization, ITIN confirmation, etc.). And most importantly, we don\'t abandon you after creation: ongoing accounting, filings, and tax advisory. Our best guarantee is that every client who\'s met us has trusted us.',
+      },
+      {
         question: 'How do I contact you?',
         answer:
           'Three options: 1) WhatsApp at +1 (307) 310-5297. it\'s the fastest. 2) Book a free call. 3) Fill out the form and pay directly online. We adapt to your preference.',
