@@ -413,7 +413,7 @@ export const contentEn: Content = {
     },
     ctaBooking: {
       label: 'Book a Consultation',
-      href: 'https://wa.me/13073105297',
+      href: 'https://cal.read.ai/claude/15-min',
     },
     reassurance: 'Free initial consultation • Response within 24h • 100% success rate',
   },

@@ -413,7 +413,7 @@ export const contentFr: Content = {
     },
     ctaBooking: {
       label: 'Prendre Rendez-vous',
-      href: 'https://wa.me/13073105297',
+      href: 'https://cal.read.ai/claude/15-min',
     },
     reassurance: 'Premier échange gratuit • Réponse en moins de 24h • 100% de taux de réussite',
   },
