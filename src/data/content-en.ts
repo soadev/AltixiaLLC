@@ -19,7 +19,7 @@ export const contentEn: Content = {
     badge: '🇺🇸 Wyoming-based company, USA',
     title: 'Your US LLC, turnkey. In your language. In 48 hours.',
     subtitle:
-      'Altixia helps French-speaking expats from France, Belgium, and Switzerland set up their American company. LLC, EIN, ITIN, bank account, accounting : everything included, everything managed, in your language.',
+      'Altixia helps French-speaking expats from France, Belgium, and Switzerland set up their American company. LLC, EIN, ITIN, bank account, accounting : everything included, everything managed, in your language. 2 bank accounts + basic accounting.',
     ctaPrimary: {
       label: 'Create my LLC now →',
       href: 'https://wa.me/13073105297',
@@ -29,16 +29,16 @@ export const contentEn: Content = {
       href: 'https://wa.me/13073105297',
     },
     trustBadges: [
-      { icon: 'Zap', text: 'LLC created in 48h' },
-      { icon: 'CheckCircle', text: '100% success rate' },
+      { icon: 'Zap', text: 'LLC created in 48 business hours' },
+      { icon: 'CheckCircle', text: '100% success rate for formations' },
       { icon: 'Globe', text: 'French-speaking support' },
     ],
   },
 
   trustBar: {
     items: [
-      { icon: 'Clock', text: 'LLC created in 48h' },
-      { icon: 'CheckCircle', text: '100% success rate' },
+      { icon: 'Clock', text: 'LLC created in 48 business hours' },
+      { icon: 'CheckCircle', text: '100% success rate for formations' },
       { icon: 'Globe', text: 'Support in French' },
       { icon: 'MapPin', text: 'Based in Wyoming, USA' },
       { icon: 'MessageCircle', text: 'WhatsApp support 7/7' },
@@ -107,7 +107,7 @@ export const contentEn: Content = {
         icon: 'FileText',
         title: 'EIN Registration',
         description:
-          'Your Employer Identification Number from the IRS. Essential for operating, opening a bank account, and invoicing.',
+          'Your Employer Identification Number from the IRS, within 1 to 24h max after formation. Essential for operating, opening a bank account, and invoicing.',
         badge: 'Included in pack',
       },
       {
@@ -121,36 +121,43 @@ export const contentEn: Content = {
         icon: 'Wallet',
         title: 'US Bank Account Opening',
         description:
-          'Complete assistance opening US bank accounts and PSPs for your LLC. No issues from shared addresses.',
+          'Complete assistance opening US bank accounts and PSPs for your LLC. No issues from shared addresses. Address change, adding a trade name, shareholder changes etc...',
         badge: 'Full support',
       },
       {
         icon: 'Calculator',
         title: 'US Accounting & IRS Filings',
         description:
-          'Bookkeeping, annual filings, W-8BEN, W-8BEN-E, FBAR 114, and all required IRS forms.',
+          'Assistance with bookkeeping, annual filings, W-8BEN, W-8BEN-E, FBAR 114, and all required IRS forms etc...',
         badge: 'Ongoing',
       },
       {
         icon: 'ShieldCheck',
         title: 'Ongoing Tax Advisory',
         description:
-          'Not a one-shot. Continuous tax guidance, because an LLC needs to live, maintain accounting, and file declarations.',
+          'Not a one-shot. Continuous tax guidance, because an LLC needs to live, maintain accounting, and file declarations. With alerts and support.',
         badge: 'Long-term',
       },
       {
         icon: 'Globe',
         title: 'International Company Formation',
         description:
-          'Structures in Hong Kong and various countries based on your expat project. Tax residency in Thailand and other jurisdictions.',
+          'Structures in Hong Kong and various countries based on your expat project. Tax residency in Paraguay and other jurisdictions. Complete and scalable setup.',
         badge: '🌍 International',
       },
       {
         icon: 'Monitor',
         title: 'IT & Web Services',
         description:
-          'Business website, hosting, domain, accounting tool setup, US phone subscription for your company. The technical infrastructure of your LLC.',
+          'Business website, emails, hosting, domain, accounting tool setup, US phone subscription for your company. The technical infrastructure of your LLC. Tracking.',
         badge: 'All-in-one',
+      },
+      {
+        icon: 'Landmark',
+        title: 'Offshore Bank Accounts',
+        description:
+          'And other solutions in the same area on request...',
+        badge: 'On request',
       },
     ],
   },
@@ -177,7 +184,11 @@ export const contentEn: Content = {
       href: 'https://wa.me/13073105297',
     },
     callout:
-      'Why no standalone LLC? Because large low-cost providers create thousands of LLCs at the same address. Result: your bank accounts and PSPs get blocked because too many scammers share that address. At Altixia, we do custom work.',
+      'Why no standalone LLC? Because large low-cost providers create thousands of LLCs at the same address. Result: your bank accounts and PSPs get blocked because too many scammers share that address. At Altixia, we offer custom solutions that work.',
+    links: [
+      { label: 'View LLC packages', href: '#services' },
+      { label: 'Solo ITIN request', href: 'https://wa.me/13073105297?text=Hello%2C%20I%20would%20like%20to%20request%20a%20solo%20ITIN' },
+    ],
   },
 
   whyAltixia: {
@@ -218,7 +229,7 @@ export const contentEn: Content = {
         icon: 'Fingerprint',
         title: 'Custom work, not factory',
         description:
-          'Unlike large platforms that open thousands of LLCs at the same address, which blocks bank accounts, at Altixia, every client is unique.',
+          'Differentiated physical addresses. Unlike large platforms that open thousands of LLCs at the same address, which blocks bank accounts, at Altixia, every client is unique and can request a unique address.',
       },
     ],
   },
@@ -277,7 +288,7 @@ export const contentEn: Content = {
       {
         myth: 'It\'s easy, I can do it myself.',
         reality:
-          'Creating the LLC itself, yes. But correctly obtaining the EIN, filing the ITIN application, opening a bank account without blocks, choosing the right state, maintaining accounting, filing IRS declarations... That\'s a different profession. And mistakes are costly.',
+          'Creating the LLC itself, yes. But correctly obtaining the EIN, filing the ITIN application, opening a bank account without blocks, choosing the right state, maintaining accounting, filing IRS declarations... That\'s a different profession. And mistakes are costly and can set you back weeks or months.',
       },
       {
         myth: 'I need to meet other people before deciding.',
@@ -316,6 +327,13 @@ export const contentEn: Content = {
         role: 'Closer',
         location: 'Switzerland',
       },
+      {
+        quote:
+          'Clear and precise answers tailored to my profile',
+        author: 'Altixia Client',
+        role: 'Entrepreneur',
+        location: 'France',
+      },
     ],
     closingText: 'They had the same doubts as you. Today, their LLC is active.',
   },
@@ -351,7 +369,7 @@ export const contentEn: Content = {
       {
         question: 'Why not do it alone or with a low-cost service?',
         answer:
-          'Low-cost platforms (Bizee, SimplifyLLC, etc.) create thousands of LLCs at the same address. Result: when you try to open a bank account or PSP, you\'re blocked because too many scammers share that address. Not to mention zero follow-up, zero support, zero accounting.',
+          'Low-cost platforms Bizee, SimplifyLLC, etc. create thousands of LLCs at the same address. Result: when you try to open a bank account or PSP, you\'re blocked because too many scammers share that address. Not to mention zero follow-up, zero support, zero accounting.',
       },
       {
         question: 'What happens AFTER the LLC is created?',
@@ -371,12 +389,12 @@ export const contentEn: Content = {
       {
         question: 'What guarantee do I have that it will work?',
         answer:
-          '100% of the LLCs we\'ve created were done in under 48 business hours. We don\'t make empty promises: every service comes with an official document proving completion (articles of organization, ITIN confirmation, etc.). And most importantly, we don\'t abandon you after creation: ongoing accounting, filings, and tax advisory. Our best guarantee is that every client who\'s met us has trusted us.',
+          '100% of the LLCs we\'ve created were done in under 48 business hours. We don\'t make empty promises: every service comes with an official document proving completion (articles of organization, ITIN confirmation, EIN, Certificate of Good Standing, B12 Declaration, etc.). And most importantly, we don\'t abandon you after creation: ongoing accounting, filings, and tax advisory. Our best guarantee is that every client who\'s met us has trusted us.',
       },
       {
         question: 'How do I contact you?',
         answer:
-          'Three options: 1) WhatsApp at +1 (307) 310-5297. it\'s the fastest. 2) Book a free call. 3) Fill out the form and pay directly online. We adapt to your preference.',
+          'Three options: 1) WhatsApp at +1 (307) 310-5297 (wa.me/13073105297), it\'s the fastest. 2) Book a free call. 3) Fill out the form and pay directly online. We adapt to your preference.',
       },
     ],
   },
@@ -391,6 +409,10 @@ export const contentEn: Content = {
     },
     ctaSecondary: {
       label: 'Chat on WhatsApp',
+      href: 'https://wa.me/13073105297',
+    },
+    ctaBooking: {
+      label: 'Book a Consultation',
       href: 'https://wa.me/13073105297',
     },
     reassurance: 'Free initial consultation • Response within 24h • 100% success rate',

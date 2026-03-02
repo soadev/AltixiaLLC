@@ -19,7 +19,7 @@ export const contentFr: Content = {
     badge: '🇺🇸 Société basée au Wyoming, USA',
     title: 'Votre LLC américaine clé en main. En français. En 48h.',
     subtitle:
-      'Altixia accompagne les expatriés francophones de France, Belgique et Suisse dans la création de leur société américaine. LLC, EIN, ITIN, compte bancaire, comptabilité : tout est inclus, tout est géré, en français.',
+      'Altixia accompagne les expatriés francophones de France, Belgique et Suisse dans la création de leur société américaine. LLC, EIN, ITIN, compte bancaire, comptabilité : tout est inclus, tout est géré, en français. 2 comptes bancaires + comptabilité de base.',
     ctaPrimary: {
       label: 'Créer ma LLC maintenant →',
       href: 'https://wa.me/13073105297',
@@ -29,16 +29,16 @@ export const contentFr: Content = {
       href: 'https://wa.me/13073105297',
     },
     trustBadges: [
-      { icon: 'Zap', text: 'LLC créée en 48h' },
-      { icon: 'CheckCircle', text: '100% de taux de réussite' },
+      { icon: 'Zap', text: 'LLC créée en 48h ouvrées' },
+      { icon: 'CheckCircle', text: '100% de réussite pour les créations' },
       { icon: 'Globe', text: 'Accompagnement en français' },
     ],
   },
 
   trustBar: {
     items: [
-      { icon: 'Clock', text: 'LLC créée en 48h' },
-      { icon: 'CheckCircle', text: '100% de réussite' },
+      { icon: 'Clock', text: 'LLC créée en 48h ouvrées' },
+      { icon: 'CheckCircle', text: '100% de réussite pour les créations' },
       { icon: 'Globe', text: 'Accompagnement en français' },
       { icon: 'MapPin', text: 'Basé au Wyoming, USA' },
       { icon: 'MessageCircle', text: 'Support WhatsApp 7j/7' },
@@ -107,7 +107,7 @@ export const contentFr: Content = {
         icon: 'FileText',
         title: 'Obtention de l\'EIN',
         description:
-          'Votre numéro d\'identification employeur (Employer Identification Number) auprès de l\'IRS. Indispensable pour opérer, ouvrir un compte bancaire et facturer.',
+          'Votre numéro d\'identification employeur (Employer Identification Number) auprès de l\'IRS, en 1 à 24h max après ouverture. Indispensable pour opérer, ouvrir un compte bancaire et facturer.',
         badge: 'Inclus dans le pack',
       },
       {
@@ -121,36 +121,43 @@ export const contentFr: Content = {
         icon: 'Wallet',
         title: 'Ouverture de compte bancaire US',
         description:
-          'Assistance complète pour l\'ouverture de comptes bancaires américains et de PSP (Payment Service Providers) pour votre LLC. Sans les blocages liés aux adresses partagées.',
+          'Assistance complète pour l\'ouverture de comptes bancaires américains et de PSP (Payment Service Providers) pour votre LLC. Sans les blocages liés aux adresses partagées. Changement d\'adresse, ajout d\'un nom commercial, changement des actionnaires etc...',
         badge: 'Accompagnement complet',
       },
       {
         icon: 'Calculator',
         title: 'Comptabilité US & Déclarations IRS',
         description:
-          'Tenue comptable, déclarations annuelles, formulaires W-8BEN, W-8BEN-E, FBAR 114, et tous les formulaires IRS nécessaires.',
+          'Assistance pour la tenue comptable, déclarations annuelles, formulaires W-8BEN, W-8BEN-E, FBAR 114, et tous les formulaires IRS nécessaires etc...',
         badge: 'Ongoing',
       },
       {
         icon: 'ShieldCheck',
         title: 'Conseil fiscal continu',
         description:
-          'Pas de one-shot. Accompagnement fiscal dans la durée, car une LLC doit vivre, tenir une comptabilité, effectuer des déclarations et éviter les erreurs coûteuses.',
+          'Pas de one-shot. Accompagnement fiscal dans la durée, car une LLC doit vivre, tenir une comptabilité, effectuer des déclarations et éviter les erreurs coûteuses. Avec alertes et soutien.',
         badge: 'Suivi durable',
       },
       {
         icon: 'Globe',
         title: 'Création de société internationale',
         description:
-          'Structures à Hong Kong et dans différents pays selon votre projet d\'expatriation. Résidence fiscale en Thaïlande et dans d\'autres juridictions. Setup complet et évolutif.',
+          'Structures à Hong Kong et dans différents pays selon votre projet d\'expatriation. Résidence fiscale au Paraguay et dans d\'autres juridictions. Setup complet et évolutif.',
         badge: '🌍 International',
       },
       {
         icon: 'Monitor',
         title: 'Services IT & Web',
         description:
-          'Site internet vitrine, hébergement, nom de domaine, mise en place des outils comptables, abonnement téléphonique US pour votre société. L\'infrastructure technique de votre LLC.',
+          'Site internet vitrine, emails, hébergement, nom de domaine, mise en place des outils comptables, abonnement téléphonique US pour votre société. L\'infrastructure technique de votre LLC. Tracking.',
         badge: 'Tout-en-un',
+      },
+      {
+        icon: 'Landmark',
+        title: 'Comptes Bancaires Off Shore',
+        description:
+          'Et d\'autres solutions dans le même domaine sur demande...',
+        badge: 'Sur demande',
       },
     ],
   },
@@ -177,7 +184,11 @@ export const contentFr: Content = {
       href: 'https://wa.me/13073105297',
     },
     callout:
-      'Pourquoi pas de LLC seule ? Parce que les gros prestataires low-cost créent des milliers de LLC à la même adresse. Résultat : vos comptes bancaires et PSP sont bloqués car trop de scammers partagent cette adresse. Chez Altixia, on fait du sur-mesure.',
+      'Pourquoi pas de LLC seule ? Parce que les gros prestataires low-cost créent des milliers de LLC à la même adresse. Résultat : vos comptes bancaires et PSP sont bloqués car trop de scammers partagent cette adresse. Chez Altixia, on propose des solutions qui fonctionnent sur-mesure.',
+    links: [
+      { label: 'Voir les packages LLC pack', href: '#services' },
+      { label: 'Demande d\'ITIN solo', href: 'https://wa.me/13073105297?text=Bonjour%2C%20je%20souhaite%20faire%20une%20demande%20d%27ITIN%20solo' },
+    ],
   },
 
   whyAltixia: {
@@ -218,7 +229,7 @@ export const contentFr: Content = {
         icon: 'Fingerprint',
         title: 'Du sur-mesure, pas de l\'usine',
         description:
-          'Contrairement aux grosses plateformes qui ouvrent des milliers de LLC à la même adresse, ce qui bloque les comptes bancaires, chez Altixia, chaque client est unique.',
+          'Des adresses physiques différenciées. Contrairement aux grosses plateformes qui ouvrent des milliers de LLC à la même adresse, ce qui bloque les comptes bancaires, chez Altixia, chaque client est unique et peut sur demande obtenir une adresse unique.',
       },
     ],
   },
@@ -277,7 +288,7 @@ export const contentFr: Content = {
       {
         myth: 'C\'est facile, je peux le faire seul.',
         reality:
-          'Créer la LLC en soi, oui. Mais obtenir l\'EIN correctement, faire la demande d\'ITIN, ouvrir un compte bancaire sans blocage, choisir le bon État, tenir la comptabilité, faire les déclarations IRS... C\'est un autre métier. Et les erreurs coûtent cher.',
+          'Créer la LLC en soi, oui. Mais obtenir l\'EIN correctement, faire la demande d\'ITIN, ouvrir un compte bancaire sans blocage, choisir le bon État, tenir la comptabilité, faire les déclarations IRS... C\'est un autre métier. Et les erreurs coûtent cher et font perdre des semaines ou des mois.',
       },
       {
         myth: 'Je dois d\'abord rencontrer d\'autres personnes avant de me décider.',
@@ -316,6 +327,13 @@ export const contentFr: Content = {
         role: 'Closer',
         location: 'Suisse',
       },
+      {
+        quote:
+          'Des réponses claires et précises adaptées à mon profil',
+        author: 'Client Altixia',
+        role: 'Entrepreneur',
+        location: 'France',
+      },
     ],
     closingText: 'Ils avaient les mêmes doutes que vous. Aujourd\'hui, leur LLC est active.',
   },
@@ -351,7 +369,7 @@ export const contentFr: Content = {
       {
         question: 'Pourquoi ne pas faire seul ou avec un service low-cost ?',
         answer:
-          'Les plateformes low-cost (Bizee, SimplifyLLC, etc.) créent des milliers de LLC à la même adresse. Résultat : quand vous essayez d\'ouvrir un compte bancaire ou un PSP, vous êtes bloqué car trop de scammers partagent cette adresse. Sans parler du zéro suivi, zéro accompagnement, zéro comptabilité.',
+          'Les plateformes low-cost Bizee, SimplifyLLC, etc. créent des milliers de LLC à la même adresse. Résultat : quand vous essayez d\'ouvrir un compte bancaire ou un PSP, vous êtes bloqué car trop de scammers partagent cette adresse. Sans parler du zéro suivi, zéro accompagnement, zéro comptabilité.',
       },
       {
         question: 'Qu\'est-ce qui se passe APRÈS la création de la LLC ?',
@@ -371,12 +389,12 @@ export const contentFr: Content = {
       {
         question: 'Quelle garantie j\'ai que ça va fonctionner ?',
         answer:
-          '100% des LLC que nous avons créées l\'ont été en moins de 48 heures ouvrées. On ne fait pas de promesses en l\'air : chaque prestation donne lieu à un document officiel attestant sa réalisation (actes de constitution, attestation ITIN, etc.). Et surtout, on ne vous lâche pas après la création : accompagnement comptable, déclarations, conseil fiscal dans la durée. Notre meilleure garantie, c\'est que tous les clients qui nous ont rencontrés nous ont fait confiance.',
+          '100% des LLC que nous avons créées l\'ont été en moins de 48 heures ouvrées. On ne fait pas de promesses en l\'air : chaque prestation donne lieu à un document officiel attestant sa réalisation (actes de constitution, attestation ITIN, EIN, Certificat de bonne tenue, Déclaration B12, etc.). Et surtout, on ne vous lâche pas après la création : accompagnement comptable, déclarations, conseil fiscal dans la durée. Notre meilleure garantie, c\'est que tous les clients qui nous ont rencontrés nous ont fait confiance.',
       },
       {
         question: 'Comment je vous contacte ?',
         answer:
-          'Trois options : 1) WhatsApp au +1 (307) 310-5297. c\'est le plus rapide. 2) Réservez un appel gratuit. 3) Remplissez le formulaire et payez directement en ligne. On s\'adapte à votre préférence.',
+          'Trois options : 1) WhatsApp au +1 (307) 310-5297 (wa.me/13073105297), c\'est le plus rapide. 2) Réservez un appel gratuit. 3) Remplissez le formulaire et payez directement en ligne. On s\'adapte à votre préférence.',
       },
     ],
   },
@@ -391,6 +409,10 @@ export const contentFr: Content = {
     },
     ctaSecondary: {
       label: 'Discuter sur WhatsApp',
+      href: 'https://wa.me/13073105297',
+    },
+    ctaBooking: {
+      label: 'Prendre Rendez-vous',
       href: 'https://wa.me/13073105297',
     },
     reassurance: 'Premier échange gratuit • Réponse en moins de 24h • 100% de taux de réussite',
