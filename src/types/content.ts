@@ -60,6 +60,7 @@ export interface PackLLCContent {
   ctaPrimary: LinkItem
   ctaSecondary: LinkItem
   callout: string
+  links?: LinkItem[]
 }
 
 /** Why Altixia section content */
@@ -106,6 +107,7 @@ export interface FinalCTAContent {
   subtitle: string
   ctaPrimary: LinkItem
   ctaSecondary: LinkItem
+  ctaBooking?: LinkItem
   reassurance: string
 }
 

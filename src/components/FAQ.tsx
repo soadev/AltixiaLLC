@@ -3,6 +3,28 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronDown } from 'lucide-react'
 import { useContent } from '../hooks/useContent'
 
+function renderAnswerWithLinks(text: string) {
+  const urlRegex = /(wa\.me\/\d+)/g
+  const parts = text.split(urlRegex)
+  return parts.map((part, i) => {
+    if (urlRegex.test(part)) {
+      urlRegex.lastIndex = 0
+      return (
+        <a
+          key={i}
+          href={`https://${part}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#3877AF] underline hover:text-[#2D6193]"
+        >
+          {part}
+        </a>
+      )
+    }
+    return <span key={i}>{part}</span>
+  })
+}
+
 export function FAQ() {
   const content = useContent()
   const [openIndex, setOpenIndex] = useState<number | null>(0)
@@ -79,7 +101,7 @@ export function FAQ() {
                     >
                       <div className="pb-8 pr-8">
                         <p className="font-sans text-[16px] md:text-[18px] text-[#6B7280] leading-relaxed">
-                          {item.answer}
+                          {renderAnswerWithLinks(item.answer)}
                         </p>
                       </div>
                     </motion.div>

@@ -3,7 +3,7 @@ import { useContent } from '../hooks/useContent'
 
 export function FinalCTA() {
   const content = useContent()
-  const { title, subtitle, ctaPrimary, ctaSecondary, reassurance } = content.finalCta
+  const { title, subtitle, ctaPrimary, ctaSecondary, ctaBooking, reassurance } = content.finalCta
 
   return (
     <section className="relative overflow-hidden py-24 bg-gradient-to-b from-[#D5E8F8] to-white">
@@ -38,6 +38,20 @@ export function FinalCTA() {
             >
               <span>{ctaPrimary.label}</span>
             </motion.a>
+
+            {/* Booking Action */}
+            {ctaBooking && (
+              <motion.a
+                href={ctaBooking.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto bg-[#10B981] text-white px-10 py-5 rounded font-bold hover:bg-[#0D9668] shadow-xl shadow-[#10B981]/20 transition-all duration-300 flex items-center justify-center gap-2"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                <span>{ctaBooking.label}</span>
+              </motion.a>
+            )}
 
             {/* Secondary Action - WhatsApp */}
             <motion.a

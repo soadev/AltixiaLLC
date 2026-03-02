@@ -155,7 +155,7 @@ export function Hero() {
                     Délai record : 48h
                   </h4>
                   <p className="text-sm text-[#6B7280] mt-1 leading-relaxed">
-                    Processus optimisé et direct avec les autorités du Wyoming
+                    Processus optimisé et direct avec les autorités de l'état US
                     pour un lancement rapide.
                   </p>
                 </div>
@@ -174,7 +174,7 @@ export function Hero() {
                 <div className="text-[#10B981] flex items-center gap-1">
                   <ShieldCheck size={16} />
                   <span className="text-[10px] font-bold uppercase tracking-wider">
-                    Conformité Totale
+                    IRS accredited Tax Preparer
                   </span>
                 </div>
               </div>
