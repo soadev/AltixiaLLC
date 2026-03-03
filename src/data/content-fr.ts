@@ -5,8 +5,8 @@ export const contentFr: Content = {
     logo: 'Altixia LLC',
     links: [
       { label: 'Services', href: '#services' },
-      { label: 'Pourquoi nous', href: '#pourquoi' },
-      { label: 'Comment ça marche', href: '#comment' },
+      { label: 'Pourquoi nous ?', href: '#pourquoi' },
+      { label: 'Comment ça marche ?', href: '#comment' },
       { label: 'FAQ', href: '#faq' },
       { label: 'Contact', href: '#contact' },
     ],
@@ -78,7 +78,7 @@ export const contentFr: Content = {
         icon: 'ThumbsDown',
         title: 'Je me suis fait avoir par un prestataire low-cost',
         description:
-          'Services bâclés, aucun suivi, adresses partagées avec des centaines d\'autres LLC (ce qui bloque ensuite les comptes bancaires).',
+          'Services bâclés, aucun suivi, adresses blacklistées — ce qui bloque ensuite pour les PSP, Shopify et les banques.',
       },
       {
         icon: 'HelpCircle',
@@ -140,10 +140,17 @@ export const contentFr: Content = {
       },
       {
         icon: 'Globe',
-        title: 'Création de société internationale',
+        title: 'Structuration internationale',
         description:
-          'Structures à Hong Kong et dans différents pays selon votre projet d\'expatriation. Résidence fiscale au Paraguay et dans d\'autres juridictions. Setup complet et évolutif.',
+          'Création de sociétés à Hong Kong et dans différentes juridictions selon votre projet d\'expatriation. Setup complet et évolutif.',
         badge: '🌍 International',
+      },
+      {
+        icon: 'MapPin',
+        title: 'Résidence fiscale',
+        description:
+          'Accompagnement pour l\'obtention de votre résidence fiscale selon vos besoins : Thaïlande, Paraguay, et autres juridictions. Conseil personnalisé et démarches complètes.',
+        badge: '🏠 Sur mesure',
       },
       {
         icon: 'Monitor',
@@ -420,7 +427,7 @@ export const contentFr: Content = {
 
   footer: {
     logo: 'Altixia LLC',
-    description: 'Votre LLC clé en main, en français.',
+    description: 'Votre LLC clé en main, en français — et tous les services pour entreprendre l\'esprit tranquille.',
     columns: [
       {
         title: 'Navigation',
@@ -430,24 +437,24 @@ export const contentFr: Content = {
           { label: 'Comment ça marche', href: '#comment' },
           { label: 'FAQ', href: '#faq' },
           { label: 'Contact', href: '#contact' },
-          { label: 'Création LLC', href: '/llc' },
+          { label: 'Création de LLC', href: '/llc' },
         ],
       },
       {
         title: 'Services',
         links: [
-          { label: 'Création LLC', href: '#services' },
-          { label: 'ITIN', href: '#services' },
-          { label: 'EIN', href: '#services' },
-          { label: 'Compte bancaire', href: '#services' },
+          { label: 'Création de LLC', href: '#services' },
+          { label: 'Demande d\'ITIN', href: '#services' },
+          { label: 'EIN Express', href: '#services' },
+          { label: 'Comptes bancaires', href: '#services' },
           { label: 'Comptabilité', href: '#services' },
-          { label: 'Conseil fiscal', href: '#services' },
+          { label: 'Renseignements expatriation et fiscalité', href: '#services' },
         ],
       },
     ],
     contact: {
       phone: '+1 (307) 310-5297',
-      email: 'claude@altixia.com',
+      email: 'contact@altixia.com',
       address: 'Altixia LLC, Wyoming, USA',
     },
     copyright: '© 2026 Altixia LLC. Tous droits réservés.',
@@ -478,10 +485,13 @@ export const contentFr: Content = {
       {
         name: 'Nouveau-Mexique',
         pros: [
-          'Anonymat total du dirigeant',
           'Pas de rapport annuel obligatoire',
           'Zéro frais de renouvellement annuel',
           'Parfait pour les structures simples',
+        ],
+        cons: [
+          'Protection juridique moins avancée',
+          'Délai d\'ouverture et de traitement plus long',
         ],
       },
     ],
@@ -496,10 +506,43 @@ export const contentFr: Content = {
     ],
     ctaPrimary: {
       label: 'Commander ma LLC →',
-      href: 'https://wa.me/13073105297',
+      href: 'https://pay.altixia.com/b/fZu28r6JJ02X3sIbsmaIM06',
+    },
+    ctaBooking: {
+      label: 'Prendre rendez-vous',
+      href: 'https://cal.read.ai/claude/15-min',
     },
     ctaSecondary: {
-      label: 'Poser une question sur WhatsApp',
+      label: 'Échangez sur WhatsApp',
+      href: 'https://wa.me/13073105297',
+    },
+    otherStatesNote: 'Autres États sur demande — contactez-nous pour en discuter.',
+  },
+
+  itinPage: {
+    title: 'Demande d\'ITIN',
+    subtitle: 'Votre numéro fiscal personnel américain, sans stress.',
+    description:
+      'L\'ITIN (Individual Taxpayer Identification Number) est votre numéro d\'identification fiscale personnel aux États-Unis. Il est indispensable pour accéder au crédit américain, ouvrir certains comptes bancaires, et remplir vos obligations fiscales auprès de l\'IRS. Altixia gère l\'intégralité de la procédure pour vous.',
+    benefits: [
+      'Préparation complète du dossier IRS',
+      'Vérification des documents (Certifying Acceptance Agent)',
+      'Suivi de la demande jusqu\'à réception',
+      'Accompagnement en français à chaque étape',
+      'Accès au crédit américain après obtention',
+      'Délai moyen : ~7 semaines après soumission à l\'IRS',
+    ],
+    timeline: '~7 semaines de délai IRS après soumission du dossier complet.',
+    ctaPrimary: {
+      label: 'Commander ma demande d\'ITIN →',
+      href: 'https://pay.altixia.com/b/eVq7sLc432b5aVabsmaIM07',
+    },
+    ctaBooking: {
+      label: 'Prendre rendez-vous',
+      href: 'https://cal.read.ai/claude/15-min',
+    },
+    ctaSecondary: {
+      label: 'Échangez sur WhatsApp',
       href: 'https://wa.me/13073105297',
     },
   },

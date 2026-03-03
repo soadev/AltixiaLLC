@@ -78,7 +78,7 @@ export const contentEn: Content = {
         icon: 'ThumbsDown',
         title: 'I got scammed by a cheap provider',
         description:
-          'Sloppy services, no follow-up, addresses shared with hundreds of other LLCs (which then blocks bank accounts).',
+          'Sloppy services, no follow-up, blacklisted addresses — which then blocks PSPs, Shopify and bank accounts.',
       },
       {
         icon: 'HelpCircle',
@@ -140,10 +140,17 @@ export const contentEn: Content = {
       },
       {
         icon: 'Globe',
-        title: 'International Company Formation',
+        title: 'International Structuring',
         description:
-          'Structures in Hong Kong and various countries based on your expat project. Tax residency in Paraguay and other jurisdictions. Complete and scalable setup.',
+          'Company formation in Hong Kong and various jurisdictions based on your expat project. Complete and scalable setup.',
         badge: '🌍 International',
+      },
+      {
+        icon: 'MapPin',
+        title: 'Tax Residency',
+        description:
+          'Assistance obtaining your tax residency based on your needs: Thailand, Paraguay, and other jurisdictions. Personalized advice and full support.',
+        badge: '🏠 Custom',
       },
       {
         icon: 'Monitor',
@@ -420,7 +427,7 @@ export const contentEn: Content = {
 
   footer: {
     logo: 'Altixia LLC',
-    description: 'Your turnkey LLC, in your language.',
+    description: 'Your turnkey LLC, in your language — and all the services for a worry-free business.',
     columns: [
       {
         title: 'Navigation',
@@ -437,17 +444,17 @@ export const contentEn: Content = {
         title: 'Services',
         links: [
           { label: 'LLC Creation', href: '#services' },
-          { label: 'ITIN', href: '#services' },
-          { label: 'EIN', href: '#services' },
-          { label: 'Bank Account', href: '#services' },
+          { label: 'ITIN Application', href: '#services' },
+          { label: 'EIN Express', href: '#services' },
+          { label: 'Bank Accounts', href: '#services' },
           { label: 'Accounting', href: '#services' },
-          { label: 'Tax Advisory', href: '#services' },
+          { label: 'Expat & Tax Information', href: '#services' },
         ],
       },
     ],
     contact: {
       phone: '+1 (307) 310-5297',
-      email: 'claude@altixia.com',
+      email: 'contact@altixia.com',
       address: 'Altixia LLC, Wyoming, USA',
     },
     copyright: '© 2026 Altixia LLC. All rights reserved.',
@@ -478,10 +485,13 @@ export const contentEn: Content = {
       {
         name: 'New Mexico',
         pros: [
-          'Complete manager anonymity',
           'No mandatory annual report',
           'Zero annual renewal fees',
           'Perfect for simple structures',
+        ],
+        cons: [
+          'Less advanced legal protection',
+          'Longer processing and setup time',
         ],
       },
     ],
@@ -496,10 +506,43 @@ export const contentEn: Content = {
     ],
     ctaPrimary: {
       label: 'Order my LLC →',
-      href: 'https://wa.me/13073105297',
+      href: 'https://pay.altixia.com/b/fZu28r6JJ02X3sIbsmaIM06',
+    },
+    ctaBooking: {
+      label: 'Book a consultation',
+      href: 'https://cal.read.ai/claude/15-min',
     },
     ctaSecondary: {
-      label: 'Ask a question on WhatsApp',
+      label: 'Chat on WhatsApp',
+      href: 'https://wa.me/13073105297',
+    },
+    otherStatesNote: 'Other states available on request — contact us to discuss.',
+  },
+
+  itinPage: {
+    title: 'ITIN Application',
+    subtitle: 'Your US personal tax number, stress-free.',
+    description:
+      'The ITIN (Individual Taxpayer Identification Number) is your personal tax identification number in the United States. It is essential for accessing US credit, opening certain bank accounts, and fulfilling your IRS tax obligations. Altixia handles the entire process for you.',
+    benefits: [
+      'Complete IRS application preparation',
+      'Document verification (Certifying Acceptance Agent)',
+      'Application tracking until receipt',
+      'French-speaking support at every step',
+      'Access to US credit after obtaining ITIN',
+      'Average processing: ~7 weeks after IRS submission',
+    ],
+    timeline: '~7 weeks IRS processing after complete file submission.',
+    ctaPrimary: {
+      label: 'Order my ITIN application →',
+      href: 'https://pay.altixia.com/b/eVq7sLc432b5aVabsmaIM07',
+    },
+    ctaBooking: {
+      label: 'Book a consultation',
+      href: 'https://cal.read.ai/claude/15-min',
+    },
+    ctaSecondary: {
+      label: 'Chat on WhatsApp',
       href: 'https://wa.me/13073105297',
     },
   },

@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, MessageCircle, ArrowRight, Globe } from 'lucide-react'
+import { Menu, X, MessageCircle, ArrowRight, Globe, Phone, ChevronDown } from 'lucide-react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import { useContent } from '../hooks/useContent'
 import { useLanguage } from '../contexts/LanguageContext'
@@ -23,8 +23,22 @@ export function Navbar() {
   const { language, setLanguage } = useLanguage()
   const isScrolled = useScrollPosition(50)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isServicesOpen, setIsServicesOpen] = useState(false)
+  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false)
+  const servicesRef = useRef<HTMLDivElement>(null)
   const navigate = useNavigate()
   const location = useLocation()
+
+  // Close services dropdown when clicking outside
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (servicesRef.current && !servicesRef.current.contains(e.target as Node)) {
+        setIsServicesOpen(false)
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [])
 
   // Prevent body scroll when mobile menu is open
   useEffect(() => {
@@ -81,7 +95,48 @@ export function Navbar() {
 
           {/* CENTER: NAV LINKS (Desktop) */}
           <div className="hidden lg:flex gap-6 xl:gap-8 items-center text-[#333A49] font-medium font-sans">
-            {content.navbar.links.map((link) => (
+            {/* Services Dropdown */}
+            <div ref={servicesRef} className="relative">
+              <button
+                onClick={() => setIsServicesOpen(!isServicesOpen)}
+                className="flex items-center gap-1 hover:text-[#3877AF] transition-colors text-[15px] whitespace-nowrap bg-transparent border-none cursor-pointer font-bold text-[#3877AF]"
+              >
+                {language === 'fr' ? 'Nos offres' : 'Our Services'}
+                <ChevronDown size={16} className={`transition-transform duration-200 ${isServicesOpen ? 'rotate-180' : ''}`} />
+              </button>
+              <AnimatePresence>
+                {isServicesOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -5 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -5 }}
+                    transition={{ duration: 0.15 }}
+                    className="absolute top-full left-0 mt-2 bg-white border border-[#E8EDF2] rounded-lg shadow-xl py-2 min-w-[220px] z-50"
+                  >
+                    <button
+                      onClick={() => { handleNavClick('#services'); setIsServicesOpen(false) }}
+                      className="block w-full text-left px-4 py-3 text-sm text-[#333A49] hover:bg-[#F7F9FC] hover:text-[#3877AF] transition-colors bg-transparent border-none cursor-pointer"
+                    >
+                      {language === 'fr' ? 'Tous les services' : 'All Services'}
+                    </button>
+                    <button
+                      onClick={() => { navigate('/llc'); setIsServicesOpen(false) }}
+                      className="block w-full text-left px-4 py-3 text-sm text-[#333A49] hover:bg-[#F7F9FC] hover:text-[#3877AF] transition-colors bg-transparent border-none cursor-pointer"
+                    >
+                      {language === 'fr' ? 'Création de LLC' : 'LLC Formation'}
+                    </button>
+                    <button
+                      onClick={() => { navigate('/itin'); setIsServicesOpen(false) }}
+                      className="block w-full text-left px-4 py-3 text-sm text-[#333A49] hover:bg-[#F7F9FC] hover:text-[#3877AF] transition-colors bg-transparent border-none cursor-pointer"
+                    >
+                      {language === 'fr' ? 'Demande d\'ITIN' : 'ITIN Application'}
+                    </button>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+
+            {content.navbar.links.filter(l => l.href !== '#services').map((link) => (
               <button
                 key={link.label}
                 onClick={() => handleNavClick(link.href)}
@@ -90,25 +145,29 @@ export function Navbar() {
                 {link.label}
               </button>
             ))}
-            <button
-              onClick={() => navigate('/llc')}
-              className="hover:text-[#3877AF] transition-colors text-[15px] whitespace-nowrap bg-transparent border-none cursor-pointer font-bold text-[#3877AF]"
-            >
-              {language === 'fr' ? 'Création LLC' : 'LLC Formation'}
-            </button>
           </div>
 
           {/* RIGHT: ACTIONS (Desktop) */}
           <div className="hidden md:flex items-center gap-6">
+            {/* Phone Link */}
+            <a
+              href={`tel:${content.navbar.phone.replace(/\s/g, '')}`}
+              className="flex items-center gap-2 text-[#333A49] hover:text-[#3877AF] transition-colors font-bold font-sans text-sm"
+            >
+              <Phone size={18} className="text-[#3877AF]" />
+              <span className="hidden xl:inline">{content.navbar.phone}</span>
+            </a>
+
             {/* WhatsApp Link */}
             <a
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-[#25D366] hover:opacity-80 transition-opacity font-bold font-sans text-sm"
+              className="flex items-center gap-2 bg-[#25D366] text-white px-4 py-2 rounded-lg hover:bg-[#20bd5a] transition-colors font-bold font-sans text-sm"
             >
-              <MessageCircle size={20} fill="#25D366" className="text-white" />
-              <span className="hidden xl:inline">{content.navbar.phone}</span>
+              <MessageCircle size={18} fill="white" className="text-[#25D366]" />
+              <span className="hidden xl:inline">{language === 'fr' ? 'Échangez sur WhatsApp' : 'Chat on WhatsApp'}</span>
+              <span className="xl:hidden"><MessageCircle size={18} /></span>
             </a>
 
             {/* CTA Button */}
@@ -202,7 +261,48 @@ export function Navbar() {
 
               {/* Links */}
               <div className="flex-1 overflow-y-auto p-6 space-y-1">
-                {content.navbar.links.map((link) => (
+                {/* Services Accordion */}
+                <div>
+                  <button
+                    onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
+                    className="flex items-center justify-between w-full text-left py-4 text-[#3877AF] font-bold text-lg font-sans bg-transparent border-none cursor-pointer"
+                  >
+                    {language === 'fr' ? 'Nos offres' : 'Our Services'}
+                    <ChevronDown size={18} className={`transition-transform duration-200 ${isMobileServicesOpen ? 'rotate-180' : ''}`} />
+                  </button>
+                  <AnimatePresence>
+                    {isMobileServicesOpen && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.2 }}
+                        className="overflow-hidden pl-4 space-y-1"
+                      >
+                        <button
+                          onClick={() => handleNavClick('#services')}
+                          className="block w-full text-left py-3 text-[#333A49] font-medium hover:text-[#3877AF] transition-colors text-base font-sans bg-transparent border-none cursor-pointer"
+                        >
+                          {language === 'fr' ? 'Tous les services' : 'All Services'}
+                        </button>
+                        <button
+                          onClick={() => { navigate('/llc'); setIsMenuOpen(false) }}
+                          className="block w-full text-left py-3 text-[#333A49] font-medium hover:text-[#3877AF] transition-colors text-base font-sans bg-transparent border-none cursor-pointer"
+                        >
+                          {language === 'fr' ? 'Création de LLC' : 'LLC Formation'}
+                        </button>
+                        <button
+                          onClick={() => { navigate('/itin'); setIsMenuOpen(false) }}
+                          className="block w-full text-left py-3 text-[#333A49] font-medium hover:text-[#3877AF] transition-colors text-base font-sans bg-transparent border-none cursor-pointer"
+                        >
+                          {language === 'fr' ? 'Demande d\'ITIN' : 'ITIN Application'}
+                        </button>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+
+                {content.navbar.links.filter(l => l.href !== '#services').map((link) => (
                   <button
                     key={link.label}
                     onClick={() => handleNavClick(link.href)}
@@ -211,25 +311,28 @@ export function Navbar() {
                     {link.label}
                   </button>
                 ))}
-                <button
-                  onClick={() => { navigate('/llc'); setIsMenuOpen(false) }}
-                  className="block w-full text-left py-4 text-[#3877AF] font-bold hover:text-[#2D6193] transition-colors text-lg font-sans bg-transparent border-none cursor-pointer"
-                >
-                  {language === 'fr' ? 'Création LLC' : 'LLC Formation'}
-                </button>
               </div>
 
               {/* Footer Actions */}
               <div className="p-6 bg-[#F7F9FC] border-t border-[#E8EDF2] space-y-6">
-                <a
-                  href={WHATSAPP_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-3 text-[#25D366] font-bold text-center"
-                >
-                  <MessageCircle size={22} fill="#25D366" className="text-white" />
-                  {content.navbar.phone}
-                </a>
+                <div className="flex items-center justify-between gap-4">
+                  <a
+                    href={`tel:${content.navbar.phone.replace(/\s/g, '')}`}
+                    className="flex items-center gap-2 text-[#333A49] font-bold text-sm"
+                  >
+                    <Phone size={20} className="text-[#3877AF]" />
+                    {content.navbar.phone}
+                  </a>
+                  <a
+                    href={WHATSAPP_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 bg-[#25D366] text-white px-4 py-2 rounded-lg font-bold text-sm"
+                  >
+                    <MessageCircle size={18} fill="white" className="text-[#25D366]" />
+                    WhatsApp
+                  </a>
+                </div>
 
                 <a
                   href={content.navbar.ctaHref}

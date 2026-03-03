@@ -120,14 +120,28 @@ export interface FooterContent {
   copyright: string
 }
 
+/** ITIN page content */
+export interface ITINPageContent {
+  title: string
+  subtitle: string
+  description: string
+  benefits: string[]
+  timeline: string
+  ctaPrimary: LinkItem
+  ctaBooking: LinkItem
+  ctaSecondary: LinkItem
+}
+
 /** LLC page content */
 export interface LLCPageContent {
   title: string
   subtitle: string
-  states: { name: string; pros: string[] }[]
+  states: { name: string; pros: string[]; cons?: string[] }[]
   checklist: string[]
   ctaPrimary: LinkItem
   ctaSecondary: LinkItem
+  ctaBooking?: LinkItem
+  otherStatesNote?: string
 }
 
 /** Complete content structure for all sections */
@@ -147,4 +161,5 @@ export interface Content {
   finalCta: FinalCTAContent
   footer: FooterContent
   llcPage: LLCPageContent
+  itinPage: ITINPageContent
 }

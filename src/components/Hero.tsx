@@ -161,20 +161,22 @@ export function Hero() {
                 </div>
               </div>
 
-              {/* Decorative badge inside card */}
-              <div className="pt-4 border-t border-[#E8EDF2] flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 bg-[#3877AF] rounded flex items-center justify-center text-white font-bold text-sm italic">
-                    A
-                  </div>
-                  <span className="text-xs font-bold text-[#333A49] tracking-widest uppercase">
-                    Altixia Certifié
+              {/* IRS Accreditation Badge */}
+              <div className="pt-4 border-t border-[#E8EDF2] flex items-center gap-3">
+                <div className="flex items-center gap-1.5 bg-[#002868]/5 border border-[#002868]/15 px-3 py-1.5 rounded-md">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="shrink-0">
+                    <path d="M12 2L3 7v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V7l-9-5z" fill="#002868" opacity="0.15"/>
+                    <path d="M12 2L3 7v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V7l-9-5z" stroke="#002868" strokeWidth="1.5" fill="none"/>
+                    <text x="12" y="15" textAnchor="middle" fill="#002868" fontSize="8" fontWeight="bold" fontFamily="sans-serif">IRS</text>
+                  </svg>
+                  <span className="text-[10px] font-bold text-[#002868] uppercase tracking-wide leading-tight">
+                    IRS
                   </span>
                 </div>
-                <div className="text-[#10B981] flex items-center gap-1">
-                  <ShieldCheck size={16} />
-                  <span className="text-[10px] font-bold uppercase tracking-wider">
-                    IRS accredited Tax Preparer
+                <div className="flex items-center gap-1.5">
+                  <ShieldCheck size={16} className="text-[#10B981] shrink-0" />
+                  <span className="text-[11px] font-bold text-[#333A49] leading-tight">
+                    Préparateur de taxes accrédité par l'IRS
                   </span>
                 </div>
               </div>
