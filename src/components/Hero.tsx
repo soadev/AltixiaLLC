@@ -7,6 +7,7 @@ import {
   Clock,
 } from 'lucide-react'
 import { useContent } from '../hooks/useContent'
+import { useLanguage } from '../contexts/LanguageContext'
 import { LucideIcon } from './LucideIcon'
 
 /**
@@ -15,6 +16,7 @@ import { LucideIcon } from './LucideIcon'
  */
 export function Hero() {
   const content = useContent()
+  const { language } = useLanguage()
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -138,11 +140,12 @@ export function Hero() {
                 />
                 <div>
                   <h4 className="font-bold text-[#333A49] text-lg">
-                    Accompagnement 100% en Français
+                    {language === 'fr' ? 'Accompagnement 100% en Français' : '100% French-Speaking Support'}
                   </h4>
                   <p className="text-sm text-[#6B7280] mt-1 leading-relaxed">
-                    Zéro barrière de la langue pour vos démarches administratives
-                    et fiscales aux USA.
+                    {language === 'fr'
+                      ? 'Zéro barrière de la langue pour vos démarches administratives et fiscales aux USA.'
+                      : 'Zero language barrier for your US administrative and tax procedures.'}
                   </p>
                 </div>
               </div>
@@ -152,11 +155,12 @@ export function Hero() {
                 <Clock className="text-[#3877AF] mt-1 shrink-0" size={24} />
                 <div>
                   <h4 className="font-bold text-[#333A49] text-lg">
-                    Délai record : 48h
+                    {language === 'fr' ? 'Délai record : 48h' : 'Record time: 48h'}
                   </h4>
                   <p className="text-sm text-[#6B7280] mt-1 leading-relaxed">
-                    Processus optimisé et direct avec les autorités de l'état US
-                    pour un lancement rapide.
+                    {language === 'fr'
+                      ? 'Processus optimisé et direct avec les autorités de l\'état US pour un lancement rapide.'
+                      : 'Streamlined process directly with US state authorities for a fast launch.'}
                   </p>
                 </div>
               </div>
@@ -171,7 +175,7 @@ export function Hero() {
                 <div className="flex items-center gap-1.5">
                   <ShieldCheck size={14} className="text-[#10B981] shrink-0" />
                   <span className="text-[11px] font-bold text-[#333A49] leading-tight">
-                    Préparateur de taxes accrédité par l'IRS
+                    {language === 'fr' ? 'Préparateur de taxes accrédité par l\'IRS' : 'IRS Accredited Tax Preparer'}
                   </span>
                 </div>
               </div>
