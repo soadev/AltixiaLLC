@@ -148,25 +148,41 @@ export function Navbar() {
           </div>
 
           {/* RIGHT: ACTIONS (Desktop) */}
-          <div className="hidden lg:flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-3">
+            {/* CTA: Commander LLC */}
+            <button
+              onClick={() => navigate('/llc')}
+              className="bg-[#3877AF] text-white px-4 py-2 rounded-lg font-bold hover:bg-[#2D6193] transition-colors text-sm font-sans"
+            >
+              {language === 'fr' ? 'Commander LLC' : 'Order LLC'}
+            </button>
+
+            {/* CTA: Commander ITIN */}
+            <button
+              onClick={() => navigate('/itin')}
+              className="bg-[#333A49] text-white px-4 py-2 rounded-lg font-bold hover:bg-[#262d38] transition-colors text-sm font-sans"
+            >
+              {language === 'fr' ? 'Commander ITIN' : 'Order ITIN'}
+            </button>
+
+            {/* WhatsApp Icon */}
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 bg-[#25D366] text-white rounded-lg hover:bg-[#20bd5a] transition-colors"
+              title="WhatsApp"
+            >
+              <MessageCircle size={18} />
+            </a>
+
             {/* Phone Icon */}
             <a
               href={`tel:${content.navbar.phone.replace(/\s/g, '')}`}
               className="p-2 text-[#3877AF] hover:bg-[#F7F9FC] rounded-lg transition-colors"
               title={content.navbar.phone}
             >
-              <Phone size={20} />
-            </a>
-
-            {/* WhatsApp Button */}
-            <a
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 bg-[#25D366] text-white px-4 py-2.5 rounded-lg hover:bg-[#20bd5a] transition-colors font-bold font-sans text-sm"
-            >
-              <MessageCircle size={18} />
-              WhatsApp
+              <Phone size={18} />
             </a>
 
             {/* Language Toggle */}
@@ -303,8 +319,23 @@ export function Navbar() {
               </div>
 
               {/* Footer Actions */}
-              <div className="p-6 bg-[#F7F9FC] border-t border-[#E8EDF2] space-y-6">
-                <div className="flex items-center justify-between gap-4">
+              <div className="p-6 bg-[#F7F9FC] border-t border-[#E8EDF2] space-y-4">
+                {/* CTA Buttons */}
+                <button
+                  onClick={() => { navigate('/llc'); setIsMenuOpen(false) }}
+                  className="flex items-center justify-center gap-2 w-full bg-[#3877AF] text-white py-4 rounded-xl font-bold hover:bg-[#2D6193] transition-colors"
+                >
+                  {language === 'fr' ? 'Commander LLC' : 'Order LLC'} <ArrowRight size={18} />
+                </button>
+                <button
+                  onClick={() => { navigate('/itin'); setIsMenuOpen(false) }}
+                  className="flex items-center justify-center gap-2 w-full bg-[#333A49] text-white py-4 rounded-xl font-bold hover:bg-[#262d38] transition-colors"
+                >
+                  {language === 'fr' ? 'Commander ITIN' : 'Order ITIN'} <ArrowRight size={18} />
+                </button>
+
+                {/* Phone + WhatsApp */}
+                <div className="flex items-center justify-between gap-4 pt-2">
                   <a
                     href={`tel:${content.navbar.phone.replace(/\s/g, '')}`}
                     className="flex items-center gap-2 text-[#333A49] font-bold text-sm"
@@ -318,19 +349,10 @@ export function Navbar() {
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 bg-[#25D366] text-white px-4 py-2 rounded-lg font-bold text-sm"
                   >
-                    <MessageCircle size={18} fill="white" className="text-[#25D366]" />
+                    <MessageCircle size={18} />
                     WhatsApp
                   </a>
                 </div>
-
-                <a
-                  href={content.navbar.ctaHref}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 w-full bg-[#3877AF] text-white py-4 rounded-xl font-bold hover:bg-[#2D6193] transition-colors"
-                >
-                  {content.navbar.ctaLabel} <ArrowRight size={18} />
-                </a>
 
                 {/* Language Selector Mobile */}
                 <div className="flex items-center justify-between px-2">
