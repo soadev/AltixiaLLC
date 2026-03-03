@@ -7,8 +7,6 @@ export const contentFr: Content = {
       { label: 'Services', href: '#services' },
       { label: 'Pourquoi nous ?', href: '#pourquoi' },
       { label: 'Comment ça marche ?', href: '#comment' },
-      { label: 'FAQ', href: '#faq' },
-      { label: 'Contact', href: '#contact' },
     ],
     phone: '+1 (307) 310-5297',
     ctaLabel: 'Créer ma LLC',

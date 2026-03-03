@@ -148,44 +148,33 @@ export function Navbar() {
           </div>
 
           {/* RIGHT: ACTIONS (Desktop) */}
-          <div className="hidden md:flex items-center gap-6">
-            {/* Phone Link */}
+          <div className="hidden lg:flex items-center gap-4">
+            {/* Phone Icon */}
             <a
               href={`tel:${content.navbar.phone.replace(/\s/g, '')}`}
-              className="flex items-center gap-2 text-[#333A49] hover:text-[#3877AF] transition-colors font-bold font-sans text-sm"
+              className="p-2 text-[#3877AF] hover:bg-[#F7F9FC] rounded-lg transition-colors"
+              title={content.navbar.phone}
             >
-              <Phone size={18} className="text-[#3877AF]" />
-              <span className="hidden xl:inline">{content.navbar.phone}</span>
+              <Phone size={20} />
             </a>
 
-            {/* WhatsApp Link */}
+            {/* WhatsApp Button */}
             <a
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 bg-[#25D366] text-white px-4 py-2 rounded-lg hover:bg-[#20bd5a] transition-colors font-bold font-sans text-sm"
+              className="flex items-center gap-2 bg-[#25D366] text-white px-4 py-2.5 rounded-lg hover:bg-[#20bd5a] transition-colors font-bold font-sans text-sm"
             >
-              <MessageCircle size={18} fill="white" className="text-[#25D366]" />
-              <span className="hidden xl:inline">{language === 'fr' ? 'Échangez sur WhatsApp' : 'Chat on WhatsApp'}</span>
-              <span className="xl:hidden"><MessageCircle size={18} /></span>
-            </a>
-
-            {/* CTA Button */}
-            <a
-              href={content.navbar.ctaHref}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-[#3877AF] text-white px-6 py-2.5 rounded font-bold hover:bg-[#2D6193] transition-colors shadow-lg shadow-[#3877AF]/10 text-sm font-sans"
-            >
-              {content.navbar.ctaLabel}
+              <MessageCircle size={18} />
+              WhatsApp
             </a>
 
             {/* Language Toggle */}
-            <div className="flex bg-[#F7F9FC] border border-[#E8EDF2] rounded-full p-1 h-10 w-[84px]">
+            <div className="flex bg-[#F7F9FC] border border-[#E8EDF2] rounded-full p-1 h-9 w-[76px]">
               <button
                 onClick={() => setLanguage('fr')}
                 className={[
-                  'flex-1 rounded-full text-[12px] font-bold transition-all',
+                  'flex-1 rounded-full text-[11px] font-bold transition-all',
                   language === 'fr'
                     ? 'bg-[#3877AF] text-white shadow-sm'
                     : 'text-[#333A49] hover:bg-[#E8EDF2]',
@@ -196,7 +185,7 @@ export function Navbar() {
               <button
                 onClick={() => setLanguage('en')}
                 className={[
-                  'flex-1 rounded-full text-[12px] font-bold transition-all',
+                  'flex-1 rounded-full text-[11px] font-bold transition-all',
                   language === 'en'
                     ? 'bg-[#3877AF] text-white shadow-sm'
                     : 'text-[#333A49] hover:bg-[#E8EDF2]',

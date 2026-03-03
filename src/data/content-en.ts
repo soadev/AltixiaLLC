@@ -5,10 +5,8 @@ export const contentEn: Content = {
     logo: 'Altixia LLC',
     links: [
       { label: 'Services', href: '#services' },
-      { label: 'Why Us', href: '#pourquoi' },
-      { label: 'How It Works', href: '#comment' },
-      { label: 'FAQ', href: '#faq' },
-      { label: 'Contact', href: '#contact' },
+      { label: 'Why Us?', href: '#pourquoi' },
+      { label: 'How It Works?', href: '#comment' },
     ],
     phone: '+1 (307) 310-5297',
     ctaLabel: 'Create My LLC',
