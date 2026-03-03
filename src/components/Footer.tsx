@@ -16,7 +16,7 @@ export function Footer() {
           {/* Column 1: Brand */}
           <div className="space-y-6">
             <img
-              src="/logo/logo-200.png"
+              src="/logo/logoaltixia.svg"
               alt={logo}
               className="h-10 w-auto brightness-0 invert"
             />

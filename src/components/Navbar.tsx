@@ -87,7 +87,7 @@ export function Navbar() {
           {/* LEFT: LOGO */}
           <button onClick={handleLogoClick} className="shrink-0 bg-transparent border-none cursor-pointer p-0">
             <img
-              src="/logo/logo-200.png"
+              src="/logo/logoaltixia.svg"
               alt="Altixia LLC"
               className="h-10 w-auto"
             />
@@ -235,7 +235,7 @@ export function Navbar() {
               <div className="p-6 flex justify-between items-center border-b border-[#E8EDF2]">
                 <div className="flex items-center gap-2">
                   <img
-                    src="/logo/logo-200.png"
+                    src="/logo/logoaltixia.svg"
                     alt="Altixia LLC"
                     className="h-8 w-auto"
                   />
