@@ -162,19 +162,14 @@ export function Hero() {
               </div>
 
               {/* IRS Accreditation Badge */}
-              <div className="pt-4 border-t border-[#E8EDF2] flex items-center gap-3">
-                <div className="flex items-center gap-1.5 bg-[#002868]/5 border border-[#002868]/15 px-3 py-1.5 rounded-md">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="shrink-0">
-                    <path d="M12 2L3 7v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V7l-9-5z" fill="#002868" opacity="0.15"/>
-                    <path d="M12 2L3 7v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V7l-9-5z" stroke="#002868" strokeWidth="1.5" fill="none"/>
-                    <text x="12" y="15" textAnchor="middle" fill="#002868" fontSize="8" fontWeight="bold" fontFamily="sans-serif">IRS</text>
-                  </svg>
-                  <span className="text-[10px] font-bold text-[#002868] uppercase tracking-wide leading-tight">
-                    IRS
-                  </span>
-                </div>
+              <div className="pt-4 border-t border-[#E8EDF2] flex items-center gap-3 bg-white rounded-md px-2 py-1.5">
+                <img
+                  src="/logo/irs-logo.png"
+                  alt="IRS"
+                  className="h-6 w-auto shrink-0"
+                />
                 <div className="flex items-center gap-1.5">
-                  <ShieldCheck size={16} className="text-[#10B981] shrink-0" />
+                  <ShieldCheck size={14} className="text-[#10B981] shrink-0" />
                   <span className="text-[11px] font-bold text-[#333A49] leading-tight">
                     Préparateur de taxes accrédité par l'IRS
                   </span>
