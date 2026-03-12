@@ -23,8 +23,8 @@ export const contentFr: Content = {
       href: 'https://wa.me/13073105297',
     },
     ctaSecondary: {
-      label: 'Discuter sur WhatsApp',
-      href: 'https://wa.me/13073105297',
+      label: 'Prendre rendez-vous',
+      href: 'https://cal.read.ai/claude/15-min',
     },
     trustBadges: [
       { icon: 'Zap', text: 'LLC créée en 48h ouvrées' },
@@ -494,16 +494,16 @@ export const contentFr: Content = {
       },
     ],
     checklist: [
-      'Création LLC dans l\'État de votre choix',
-      'Obtention EIN (numéro employeur IRS)',
+      'Création LLC sous 24h dans l\'État de votre choix',
+      'Obtention immédiate de l\'EIN (numéro employeur IRS)',
       'Demande d\'ITIN (numéro fiscal personnel)',
-      'Ouverture de compte bancaire US',
-      'Adresse de réception courrier (Registered Agent)',
+      'Ouverture immédiate de 2 comptes bancaires US',
+      'Réception du courrier — 1 an incluse',
       'Accompagnement WhatsApp personnalisé',
       'Assistance complète étape par étape',
     ],
     ctaPrimary: {
-      label: 'Commander ma LLC →',
+      label: 'Commander immédiatement ma LLC →',
       href: 'https://pay.altixia.com/b/fZu28r6JJ02X3sIbsmaIM06',
     },
     ctaBooking: {

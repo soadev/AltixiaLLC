@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Check, MessageCircle, AlertTriangle } from 'lucide-react'
+import { Check, AlertTriangle } from 'lucide-react'
 import { useContent } from '../hooks/useContent'
 import { SEOHead } from '../components/SEOHead'
 
@@ -171,17 +171,6 @@ export function LLCPage() {
                 {llc.ctaBooking.label}
               </a>
             )}
-
-            {/* WhatsApp Button (green unified) */}
-            <a
-              href={llc.ctaSecondary.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full md:w-auto bg-[#25D366] text-white px-10 py-5 rounded font-bold hover:bg-[#20bd5a] transition-all shadow-lg shadow-[#25D366]/20 text-lg flex items-center justify-center gap-3"
-            >
-              <MessageCircle size={22} fill="white" className="text-[#25D366]" />
-              {llc.ctaSecondary.label}
-            </a>
           </div>
         </motion.div>
       </section>

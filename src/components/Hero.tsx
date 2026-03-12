@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import {
   ArrowRight,
-  MessageCircle,
+  CalendarCheck,
   ShieldCheck,
   CheckCircle2,
   Clock,
@@ -100,7 +100,7 @@ export function Hero() {
               rel="noopener noreferrer"
               className="bg-[#F7F9FC] text-[#333A49] px-8 py-4 rounded font-bold border border-[#E8EDF2] hover:bg-[#E8EDF2] flex items-center justify-center gap-2 transition-all"
             >
-              <MessageCircle size={20} className="text-[#25D366]" />{' '}
+              <CalendarCheck size={20} className="text-[#3877AF]" />{' '}
               {content.hero.ctaSecondary.label}
             </a>
           </motion.div>

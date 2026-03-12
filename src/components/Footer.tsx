@@ -64,10 +64,14 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <Mail size={18} className="text-[#9BCAEF] shrink-0 mt-0.5" />
                 <a
-                  href={`mailto:${contact.email}`}
+                  href={`mailto:${['contact', 'altixia.com'].join('@')}`}
                   className="text-white/70 hover:text-white transition-colors text-sm"
+                  onClick={(e) => {
+                    e.preventDefault()
+                    window.location.href = `mailto:${['contact', 'altixia.com'].join('@')}`
+                  }}
                 >
-                  {contact.email}
+                  {`contact${String.fromCharCode(64)}altixia.com`}
                 </a>
               </li>
               <li className="flex items-start gap-3">
