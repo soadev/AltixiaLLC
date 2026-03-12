@@ -25,7 +25,12 @@ export function SEOHead({ titleFr, titleEn, descriptionFr, descriptionEn, path }
       <meta property="og:type" content="website" />
       <meta property="og:url" content={url} />
       <meta property="og:site_name" content="Altixia LLC" />
+      <meta property="og:locale" content={language === 'fr' ? 'fr_FR' : 'en_US'} />
+      <meta property="og:locale:alternate" content={language === 'fr' ? 'en_US' : 'fr_FR'} />
       <link rel="canonical" href={url} />
+      <link rel="alternate" hrefLang="fr" href={url} />
+      <link rel="alternate" hrefLang="en" href={url} />
+      <link rel="alternate" hrefLang="x-default" href={url} />
     </Helmet>
   )
 }
