@@ -25,7 +25,7 @@ See: .planning/PROJECT.md (updated 2026-03-01)
 Phase: 2 of 4 (Above the Fold) -- COMPLETE
 Plan: 3 of 3 in current phase
 Status: Phase 2 complete, ready for verification
-Last activity: 2026-03-02 - Completed quick task 1: Apply all client annotated feedback on landing page
+Last activity: 2026-03-12 - Completed quick task 2: Create sitemap.xml and robots.txt for Google Search Console
 
 Progress: [█████░░░░░] 50%
 
@@ -83,9 +83,10 @@ None.
 | # | Description | Date | Commit | Directory |
 |---|-------------|------|--------|-----------|
 | 1 | Apply all client annotated feedback on landing page - 22+ text changes across hero, services, FAQ, CTA sections | 2026-03-02 | 48ba9d6 | [1-apply-all-client-annotated-feedback-on-l](./quick/1-apply-all-client-annotated-feedback-on-l/) |
+| 2 | Create sitemap.xml and robots.txt for Google Search Console — all 5 routes indexed | 2026-03-12 | 532bba1 | [2-cr-er-un-sitemap-xml-pour-google-search-](./quick/2-cr-er-un-sitemap-xml-pour-google-search-/) |
 
 ## Session Continuity
 
-Last session: 2026-03-02
-Stopped at: Quick task 1 complete — all client-annotated feedback applied
+Last session: 2026-03-12
+Stopped at: Quick task 2 complete — sitemap.xml and robots.txt created and build verified
 Resume file: None
